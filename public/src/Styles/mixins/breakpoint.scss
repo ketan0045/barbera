@@ -1,0 +1,45 @@
+@use 'sass:map';
+
+$bp: (
+  base: 0px,
+  sm: 540px,
+  md: 992px,
+  xl: 1500px,
+  lg: 1280px,
+);
+
+
+@mixin breakpoint($point) {
+  @if str-index($point, "max-") == 1 {
+    @media screen and (max-width: map.get($bp, str-slice($point, 5))) {
+      @content;
+    }
+  }
+
+  @else {
+    @media screen and (min-width: map.get($bp, $point)) {
+      @content ;
+    }
+  }
+
+}
+
+
+
+@mixin  responsive($breakpoint1){
+  @if $breakpoint1 == mini-device {
+      @media (min-width:1024px) and (max-width:1800px) { @content};
+  }
+}
+@mixin  tab($breakpoint2){
+  @if $breakpoint2 == tablet {
+      @media (min-width:768px) and (max-width:1024px) { @content};
+  }
+}
+@mixin  tab1($breakpoint3){
+  @if $breakpoint3 == tablet1 {
+    @media screen and (max-device-width: 767px) and (orientation: landscape) { @content};
+  }
+}
+
+

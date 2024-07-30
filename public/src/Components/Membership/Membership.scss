@@ -1,0 +1,153 @@
+@import '../../Styles/mixins/breakpoint.scss';
+@import '../../Styles/mixins/color.scss';
+@import '../../Styles/mixins/global.scss';
+@import '../../Styles/mixins/typography.scss';
+
+.add-new-plan-center-align {
+    display: flex;
+    margin: 50px 0 0 0;
+    justify-content: center;
+    @include breakpoint("max-md") {
+        margin: 0;
+    }
+    .add-plan-box-design {
+        width: 903px;
+        background: #F6FBFF;
+        border: 2px solid rgba(20, 121, 255, 0.5);
+        border-radius: 10px;
+        height: 450px;
+        display: flex;
+        user-select: none;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint("max-md") {
+            width: 100%;
+            height: 350px;
+        }
+        .add-plan-icon-center-align {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 14px;
+        }
+        .add-plan-icon-center-align > img {
+            opacity: .5;
+        }
+        .plan-details > p {
+            @include text-md-bold;
+            color: #193566;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .plan-details {
+            span {
+                color: $blue-2;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.membership-box-center-align {
+    display: flex;
+    justify-content: center;
+    .membership-card-box {
+        width: 750px;
+        @include breakpoint("max-md") {
+            width: 100%;
+        }
+        .card-box-grid {
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            gap: 50px;
+            cursor: pointer;
+            // .membership-card-box-items:nth-child(1) {
+            //     background: linear-gradient(90deg, rgba(20, 121, 255, 0.25) 0%, rgba(20, 121, 255, 0.1) 100%);
+            //     border: 1px solid #1479FF;
+            //     box-shadow: 0px 5px 30px #D1D9E6;
+            //     border-radius: 8px;
+            // }
+            // .membership-card-box-items:nth-child(2) {
+            //     background: linear-gradient(90deg, rgba(241, 211, 2, 0.25) 0%, rgba(255, 255, 109, 0.1) 100%, rgba(255, 226, 89, 0.1) 100%, rgba(189, 191, 70, 0.1) 100%, rgba(241, 211, 2, 0.1) 100%);
+            // }
+            // .membership-card-box-items:nth-child(3) {
+            //     background: linear-gradient(90.23deg, rgba(70, 191, 189, 0.5) 0.16%, rgba(70, 191, 189, 0.2) 99.76%);
+            // }
+            // .membership-card-box-items:nth-child(4) {
+            //     background: linear-gradient(90.23deg, rgba(255, 142, 85, 0.5) 0.16%, rgba(255, 142, 85, 0.2) 99.76%);
+            // }
+            .membership-card-box-items {
+                // padding: 15px;
+                // .card-duration-banner-first-background {
+                //     background: linear-gradient(90deg, rgba(20, 121, 255, 0.5) 0%, rgba(20, 121, 255, 0.398438) 33.85%, rgba(20, 121, 255, 0.2875) 70.83%, rgba(20, 121, 255, 0.2) 100%);
+                // }
+                .card-duration-banner {
+                    padding: 15px;
+                    .card-content-alignment {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        div {
+                            p {
+                                font-size: 12px;
+                                line-height: 18px;
+                                font-weight: 500;
+                                color: $blue-light;
+                            }
+                            h4 {
+                                @include text-sm-bold;
+                                color: $blue-light;
+                                margin: 0;
+                            }
+                        }
+                        h2 {
+                            @include text-md-bold;
+                            color: $blue-light;
+                            margin: 0;
+                            span {
+                                font-weight: 400;
+                                font-family: 'Roboto', sans-serif
+                            }
+                        }
+                    }
+                }
+                .child-text-style {
+                    padding: 0 0 10px 0;
+                    p {
+                        padding-left: 15px;
+                        margin: 0;
+                        @include text-sm-bold;
+                        font-weight: 500;
+                        color: $blue-light;
+                    }
+                }
+                .card-title-alignment {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 60px;
+                    padding-top: 15px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    h1 {
+                        @include heading-8;
+                        margin: 0;
+                        color: $blue-light;
+                    }
+                    // .package-round-first {
+                    //     background: rgba(20, 121, 255, 0.4);
+                    //     border: 0.75px solid #1479FF;
+                    // }
+                    .package-round {
+                      
+                        width: 33px;
+                        height: 33px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import '../../Styles/mixins/global.scss';
+
+.mobile-view-statement-mobile-container {
+    max-width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    overflow-x: hidden !important;
+
+    .mobile-view-statement-all-content-alignment {
+        padding: 10px 0 10px 0;
+    }
+
+    .daily-statements-header {
+        padding: 16px 0 24px 0;
+        display: grid;
+        grid-template-columns: 1fr 60px;
+
+        div+div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+
+
+        h1 {
+            color: #1479FF;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            margin: 0;
+
+        }
+
+        p {
+            color: #1479FF;
+            margin: 0;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none !important;
+        width: 0px !important;
+        height: 0px !important;
+    }
+
+    @include breakpoint("max-sm") {
+        max-width: 100%;
+    }
+
+    .mobile-statement-tab {
+        overflow: auto;
+        overflow-y: hidden;
+        padding: 0 0 10px 0;
+
+        ul {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+
+            .active {
+                color: #1479FF;
+                transition: .3s ease-in-out;
+
+                &::after {
+                    transform: scaleX(1);
+                    opacity: 1;
+                }
+            }
+
+            li {
+                text-decoration: none;
+                color: #4F7194;
+                font-weight: 600;
+                font-size: 18px;
+                border-bottom: 1px solid #D1D9E6;
+                line-height: 27px;
+                position: relative;
+                padding: 0 32px 5px 32px;
+                position: relative;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 100%;
+                    bottom: -1px;
+                    left: 0;
+                    background-color: #1479FF;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transform-origin: left;
+                    transform-origin: left;
+                    opacity: 0;
+                    transition: opacity .3s ease-out, -webkit-transform .3s ease-out;
+                }
+            }
+        }
+    }
+}

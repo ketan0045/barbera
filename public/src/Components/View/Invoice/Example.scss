@@ -1,0 +1,208 @@
+.print-table-design {
+    table {
+        width: 720px;
+        height: 1000px;
+        margin: 0 auto;
+        background-color: #fff;
+        /* padding: 30px; */
+        border-radius: 6px;
+    }
+table.new-table-design ,
+    .new-table-design th,
+    .new-table-design td {
+        border: 1px solid #cecece;
+        border-collapse: collapse;
+    }
+
+    /* @media screen and (max-width: 1024px) {
+        table {
+            max-width: 100%;
+            padding: 0 40px;
+        }
+    } */
+    .invoice-title h5 {
+        font-size: 16px;
+        color: #050505;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .invoice-title {
+        padding-bottom: 15px;
+    }
+
+    .parlour-details h4 {
+        font-size: 14px;
+        margin: 0;
+        line-height: 22px;
+        font-weight: 600;
+        color: #050505;
+    }
+
+    .parlour-details p {
+        font-size: 12px;
+        color: #323232;
+        line-height: 22px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .left-side {
+        float: left;
+    }
+
+    .left-side p {
+        font-size: 12px;
+        color: #323232;
+        margin: 0;
+        line-height: 20px;
+    }
+
+    .right-side p {
+        font-size: 12px;
+        color: #323232;
+        margin: 0;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    .right-side span {
+      
+        font-weight: 500;
+        max-width: 100px;
+    }
+
+    .first-child-align span {
+        padding-right: 49px !important;
+    }
+
+    .right-side {
+        float: right;
+    }
+
+   
+
+    .new-table-design tr td {
+        font-size: 12px;
+        line-height: 18px;
+        color: #050505;
+        font-weight: 400;
+    }
+
+    .new-table-design tr td,
+    .new-table-design tr th {
+        padding: 8px;
+    }
+
+    .new-table-design tr th {
+        font-size: 12px;
+        line-height: 18px;
+        color: #050505;
+        font-weight: 500;
+    }
+
+    .table-space-remove {
+        margin-top: 30px;
+    }
+
+    .table-space-remove table {
+        padding: 0;
+        border: 1px solid #757575;
+        border-radius: 0px;
+    }
+    .service-text {
+        font-size: 12px;
+        color: #050505;
+        margin: 0;
+        // margin-bottom: 10px;    
+    }
+    .alignment-text {
+        display: flex;
+        align-items: center;
+        padding: 3px 0;
+        width: 220px;
+        justify-content: flex-end;  
+        border-bottom: 1px solid #cecece;
+    }
+    .first-child {
+        width: 120px;
+    }
+    .sec-child {
+        width: 90px;
+    }
+    .alignment-text:last-child {
+        border: none;
+    }
+    .alignment-text:first-child {
+        padding: 0;
+    }
+    .alignment-text span {
+        font-size: 12px;
+        line-height: 20px;
+        color: #323232;
+    }
+    .right-side {
+        div {
+            display: flex;
+            align-items: center;
+        }
+        p {
+            width: 90px;
+            text-align: left !important;
+        }
+        span {
+            font-size: 12px;
+            color: #323232;
+            text-align: right;
+            margin: 0;
+            line-height: 20px;
+            display: block;
+            padding-left: 10px;
+        }
+    }
+    .final-bill {
+        // border: 1px dashed #757575;
+        padding: 3px;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .thanks-message {
+        margin: 1rem 0;
+    }
+    .thanks-message p {
+        font-size: 14px;
+        color: #323232;
+        margin: 0;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .thanks-message span {
+        font-size: 12px;
+        color: #323232;
+        font-weight: 400;
+        display: block;
+        line-height: 20px;
+    }
+    .terms p {
+        font-size: 14px;
+        color: #323232;
+        margin: 0;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .terms {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        // border-bottom: 1px solid #757575;
+    }
+    .terms ul {
+        margin: 3px 0 0 0;
+    }
+    .terms ul li {
+        font-size: 12px;
+        padding-bottom: 3px;
+        color: #323232;
+        line-height: 18px;
+    }
+}

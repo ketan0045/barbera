@@ -1,0 +1,156 @@
+.group-editing.e-schedule .e-month-view .e-appointment .e-appointment-details {
+    padding: 1px;
+    padding-left: 3px;
+}
+
+.group-editing.e-schedule .e-vertical-view .e-resource-cells {
+    height: 62px;
+}
+
+.group-editing.e-schedule .template-wrap {
+    display: flex;
+    text-align: left;
+}
+
+.css-ryovsd-placeholder{
+  opacity: .5;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.css-ryovsd-placeholder{
+  opacity: 0.5;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.group-editing.e-schedule .template-wrap .resource-image {
+    width: auto;
+    height: auto;
+    background-size: 45px;
+    background-repeat: no-repeat;
+
+}
+
+.group-editing.e-schedule .template-wrap .resource-details {
+    padding-left: 10px;
+}
+
+.group-editing.e-schedule .template-wrap .resource-details .resource-name {
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+.group-editing.e-schedule.e-device .template-wrap .resource-details .resource-name {
+    font-size: inherit;
+    font-weight: inherit;
+    padding-top: 5px;
+}
+
+.group-editing.e-schedule.e-device .e-resource-tree-popup .e-fullrow {
+    height: 50px;
+}
+
+.group-editing.e-schedule.e-device .template-wrap .resource-details .resource-designation {
+    display: none;
+}
+
+.group-editing.e-schedule .template-wrap .resource-image.margaret {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/margaret.png');
+}
+
+.group-editing.e-schedule .template-wrap .resource-image.robert {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robert.png');
+}
+
+.group-editing.e-schedule .template-wrap .resource-image.laura {
+    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/laura.png');
+}
+.custom-event-editor .e-textlabel {
+    padding-right: 15px;
+    text-align: right;
+  }
+  
+  .custom-event-editor td {
+    padding: 7px;
+    padding-right: 16px;
+  }
+  table tr{
+    height: 0 !important;
+}
+
+  /* .e-schedule .e-vertical-view .e-header-cells {
+    display: none !important;
+}
+.e-schedule .e-vertical-view .e-resource-cells {
+    border-bottom-width: 0 !important;
+} */
+
+.e-schedule .e-vertical-view .e-work-cells{
+    height: 25px !important;
+}
+
+.e-schedule .e-vertical-view .e-time-cells-wrap table td{
+    height: 25px !important;
+}
+
+.dataResult {
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    background: #ECF0F3;
+    box-shadow: 10px 10px 15px rgb(25 53 102 / 10%), -10px -10px 15px #ffffff;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  .dataResult::-webkit-scrollbar {
+    display: none;
+  }
+  .mobile-number-list-style {
+      padding: 5px 15px;
+      cursor: pointer;
+      transition: .2s;
+  }
+  .mobile-number-list-style:hover {
+      background-color: #d1d9e6;
+  }
+  .mobile-number-list-style p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  .mobile-number-list-style span {
+    font-weight: 400;
+  }
+  
+  .dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  .dataResult1 {
+    margin-top: 5px;
+    width: 89%;
+    height: 200px;
+    border-radius: 4px;
+    background: #ECF0F3;
+    box-shadow: 10px 10px 15px rgb(25 53 102 / 10%), -10px -10px 15px #ffffff;
+    overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 9999;
+  }
+  

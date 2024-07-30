@@ -1,0 +1,98 @@
+$time-btn-background:$body-banner-color;
+$calender-background-color:$primary;
+
+.time-btn-style {
+    background-color: $time-btn-background;
+    min-width:136px;
+    min-height: 50px;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(25, 53, 102, 0.1);
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+.company-card {    
+    height: calc(100vh - 123px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.setting-box-scroll {
+    height: calc(100vh - 123px);
+    overflow: auto;
+    overflow-x: hidden !important;
+}
+.card-footer-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.calender-round {
+    width: 65px;
+    height: 65px;
+    background-color: #D1D9E6;
+    border-radius: 50%;
+}
+.dropdown-style-one {
+    background: #ECF0F3;
+    box-shadow: -4px -4px 8px #FFFFFF, 4px 4px 8px rgba(25, 53, 102, 0.1);
+    border-radius: 8px;
+    min-height: 0;
+    min-width: 180px;
+    padding: 10px;
+    color: #193566;
+}
+
+.fa-sign-out-alt:before {
+    content: "\f2f5";
+    font-size: 26px;
+    color: #97a7c3;
+}
+.setting-profile {
+    width: 130px;
+    height: 130px;
+    background-color: #97A7C3;
+}
+.store-timing-height {
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.time-icon-remove {
+    input[type="time"]::-webkit-calendar-picker-indicator {
+       cursor: pointer;
+    }
+}
+
+
+.time-dropdown-set {
+    input {
+        max-width: 120px;
+        background: #ecf0f3;
+        box-shadow: -4px -4px 8px #fff, 4px 4px 8px #1935661a;
+        border-radius: 8px;
+        min-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        color: #193566!important;
+    }
+    .react-datepicker__header{
+        background-color: #ecf0f3 !important; 
+        border: none !important;
+        .react-datepicker-time__header {
+            font-family: "Poppins", sans-serif !important;
+            color: #193566!important;
+        }
+    }
+    .react-datepicker {
+        background: #ecf0f3 !important;
+        ul {
+            li {
+                font-size: 14px;
+                font-weight: 500;
+                color: #193566!important;
+                font-family: "Poppins", sans-serif !important;
+            }
+        }
+    }
+}

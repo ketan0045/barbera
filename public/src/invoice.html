@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title> first page </title>
+
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #F6FBFF;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    p:last-child {
+        margin-top: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0;
+    }
+
+    table {
+        width: 793px;
+        margin: 0 auto;
+        background-color: #fff;
+        /* padding: 30px; */
+        border-radius: 6px;
+    }
+table.new-table-design ,
+    .new-table-design th,
+    .new-table-design td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    /* @media screen and (max-width: 1024px) {
+        table {
+            max-width: 100%;
+            padding: 0 40px;
+        }
+    } */
+    .invoice-title h5 {
+        font-size: 16px;
+        color: #050505;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .invoice-title {
+        padding-bottom: 15px;
+    }
+
+    .parlour-details h4 {
+        font-size: 14px;
+        margin: 0;
+        line-height: 22px;
+        font-weight: 600;
+        color: #050505;
+    }
+
+    .parlour-details p {
+        font-size: 12px;
+        color: #323232;
+        line-height: 22px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .left-side {
+        float: left;
+    }
+
+    .left-side p {
+        font-size: 12px;
+        color: #323232;
+        margin: 0;
+        line-height: 20px;
+    }
+
+    .right-side p {
+        font-size: 12px;
+        color: #323232;
+        margin: 0;
+        line-height: 20px;
+    }
+
+    .right-side span {
+        font-weight: 500;
+        padding-right: 15px;
+        max-width: 100px;
+    }
+
+    .first-child-align span {
+        padding-right: 49px !important;
+    }
+
+    .right-side {
+        float: right;
+    }
+
+    .bottom-border {
+        border-bottom: 1px solid #323232;
+    }
+
+    .new-table-design tr td {
+        font-size: 12px;
+        line-height: 18px;
+        color: #050505;
+        font-weight: 400;
+    }
+
+    .new-table-design tr td,
+    .new-table-design tr th {
+        padding: 8px;
+    }
+
+    .new-table-design tr th {
+        font-size: 12px;
+        line-height: 18px;
+        color: #050505;
+        font-weight: 500;
+    }
+
+    .table-space-remove {
+        margin-top: 30px;
+    }
+
+    .table-space-remove table {
+        padding: 0;
+        border: 1px solid #323232;
+        border-radius: 0px;
+    }
+    .service-text {
+        font-size: 12px;
+        color: #050505;
+        margin: 0;
+        margin-bottom: 10px;    
+    }
+    .alignment-text {
+        display: flex;
+        align-items: center;
+        padding: 3px 0;
+        width: 220px;
+        justify-content: flex-end;
+        border-bottom: 1px solid #757575;
+    }
+    .first-child {
+        width: 120px;
+    }
+    .sec-child {
+        width: 90px;
+    }
+    .alignment-text:last-child {
+        border: none;
+    }
+    .alignment-text:first-child {
+        padding: 0;
+    }
+    .alignment-text span {
+        font-size: 12px;
+        line-height: 20px;
+        color: #323232;
+    }
+    .final-bill {
+        border: 1px dashed #dbd1d1;
+        padding: 3px;
+    }
+    .thanks-message p {
+        font-size: 14px;
+        color: #323232;
+        margin: 0;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .thanks-message span {
+        font-size: 12px;
+        color: #323232;
+        font-weight: 400;
+        display: block;
+        line-height: 20px;
+    }
+    .terms p {
+        font-size: 14px;
+        color: #323232;
+        margin: 0;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    .terms {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #323232;
+    }
+    .terms ul {
+        margin: 3px 0 0 0;
+    }
+    .terms ul li {
+        font-size: 12px;
+        padding-bottom: 3px;
+        color: #323232;
+        line-height: 18px;
+    }
+</style>
+
+<body style="margin: 0; padding: 0;" id="invoice">
+    <table cellpadding="0" cellspacing="0" width="100%" style="padding: 30px;">
+        <tr>
+            <td style="padding: 0px 0 0px 0;">
+                <table align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div class="invoice-title">
+                                <h5>Invoice </h5>
+                            </div>
+                            <div class="parlour-details" align="right">
+                                <h4>Elora Hair Parlour</h4>
+                                <p>21, Western Business Park, Vesu</p>
+                                <p>Surat. 395007</p>
+                                <p>+91 9812345670</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="bottom-border">
+                        <td style="padding: 40px 0 30px 0;">
+                            <div class="align-items">
+                                <div class="left-side">
+                                    <p>Bill To</p>
+                                    <p>Patrakaar Popatlal</p>
+                                    <p>+91 987654321</p>
+                                </div>
+                                <div class="right-side" align="right">
+                                    <p class="first-child-align">
+                                        <span> Invoice No.</span>
+                                        100987
+                                    </p>
+                                    <p>
+                                        <span> Invoice Date.</span>
+                                        08/10/2021
+                                    </p>
+                                    <p>
+                                        <span> Invoice Time.</span>
+                                        11:33:34 AM
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0 0 0;">
+                            <p class="service-text">Services</p>
+                        </td>
+                    </tr>
+                    <tr style="padding: 30px 0 0 0;">
+                        <td class="table-space-remove">
+                            <table class="new-table-design">
+                                <thead style="border: 1px solid red;">
+                                    <tr>
+                                        <th align="center" width="8%">#</th>
+                                        <th align="center" width="30%">Service Name</th>
+                                        <th align="center" width="11.5%">Price</th>
+                                        <th align="center" width="11.5%">Discount (₹)</th>
+                                        <th align="center" width="11.5%">Sell Price</th>
+                                        <th align="center" width="8%">GST(%)</th>
+                                        <th align="center" width="11.5%">Net Price</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td align="center">
+                                        1
+                                    </td>
+                                    <td>Hair Cut</td>
+                                    <td align="center">300</td>
+                                    <td align="center">100.0</td>
+                                    <td align="center">200.0</td>
+                                    <td align="center">18</td>
+                                    <td align="center">472</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        2
+                                    </td>
+                                    <td>Classic Facial with added cream on face</td>
+                                    <td align="center">300</td>
+                                    <td align="center">100.0</td>
+                                    <td align="center">200.0</td>
+                                    <td align="center">18</td>
+                                    <td align="center">472</td>
+                                </tr>
+                                
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px 0 0 0;">
+                            <p class="service-text">Products</p>
+                        </td>
+                    </tr>
+                    <tr style="padding: 30px 0 0 0;">
+                        <td class="table-space-remove">
+                            <table class="new-table-design">
+                                <thead style="border: 1px solid red;">
+                                    <tr>
+                                        <th align="center" width="8%">#</th>
+                                        <th align="center" width="23%">Products Name</th>
+                                        <th align="center" width="7%">Qty</th>
+                                        <th align="center" width="11%">Total Price</th>
+                                        <th align="center" width="11%">Discount (₹)</th>
+                                        <th align="center" width="11%">Sell Price</th>
+                                        <th align="center" width="7%">GST(%)</th>
+                                        <th align="center" width="11%">Nett Price</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td align="center">
+                                        1
+                                    </td>
+                                    <td>Intense Repair Shampoo</td>
+                                    <td align="center">2</td>
+                                    <td align="center">300</td>
+                                    <td align="center">600</td>
+                                    <td align="center">100.0</td>
+                                    <td align="center">500.0</td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        1
+                                    </td>
+                                    <td>Tri Nitro Toluene Solution Hair Colour Expert</td>
+                                    <td align="center">2</td>
+                                    <td align="center">300</td>
+                                    <td align="center">600</td>
+                                    <td align="center">100.0</td>
+                                    <td align="center">500.0</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px 0 0 0; display:flex; justify-content: flex-end;">
+                            <div class="final-bill">
+                            <div class="alignment-text">
+                                <div class="first-child">
+                                    <span>Gross Total </span>
+                                </div>
+                                <div class="sec-child" align="right">
+                                    <span>2200.0</span>
+                                </div>
+                            </div>
+                            <div class="alignment-text">
+                                <div class="first-child">
+                                    <span>Discount (₹) </span>
+                                </div>
+                                <div class="sec-child" align="right">
+                                    <span>2200.0</span>
+                                </div>
+                            </div>
+                            <div class="alignment-text">
+                                <div class="first-child">
+                                    <span>Discounted Price</span>
+                                </div>
+                                <div class="sec-child" align="right">
+                                    <span>2200.0</span>
+                                </div>
+                            </div>
+                            <div class="alignment-text">
+                                <div class="first-child">
+                                    <span>GST (₹) </span>
+                                </div>
+                                <div class="sec-child" align="right">
+                                    <span>282.0</span>
+                                </div>
+                            </div>
+                            <div class="alignment-text">
+                                <div class="first-child">
+                                    <span style="font-weight: 600;">Net Total Price</span>
+                                </div>
+                                <div class="sec-child" align="right">
+                                    <span style="font-weight: 600;">2200.0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    </tr>
+                    <tr style="padding: 15px 0 0 0;">
+                        <td>
+                            <div class="thanks-message">
+                                <p>Amount in words: One Thousand Eight Hundred Rupees Only</p>
+                                <span>Paid by Cash</span>
+                                <span>Thanks for your visit </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="terms">
+                                <p>Terms and Conditions</p>
+                                <ul>
+                                    <li>Material once sold will not be returned.</li>
+                                    <li>All disputes are subjected to local jurisdiction.</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+<script src="html2pdf.bundle.min.js"></script>
+<script src="Invoice.js"></script>
+</html>

@@ -1,0 +1,503 @@
+@import '../../../../Styles/mixins/breakpoint.scss';
+@import '../../../../Styles/mixins/color.scss';
+@import '../../../../Styles/mixins/typography.scss';
+
+.cus-commmission-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F7FBFF;
+    z-index: 999999999;
+    animation-name: round;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+
+    .commission-modal-header {
+        background-color: $white;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        padding: calc($normal-pixel * 5 - 0px) 0;
+        border-radius: calc($normal-pixel * 2 - 0px);
+
+        @include breakpoint("max-md") {
+            padding: 20px 0;
+        }
+
+        .commission-modal-header-alignment {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .commission-custom-modal-heading-title {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+
+                .modal-close {
+                    width: 45px;
+                    cursor: pointer;
+                    height: 45px;
+                    background-color: $modal-background;
+                    @include medium-border-radius;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+
+                .modal-title {
+                    h2 {
+                        margin: 0;
+                        @include heading-3;
+                        color: $blue-light;
+                        font-size: 30px;
+                        line-height: 33px;
+                        padding-left: 25px;
+
+                        @include breakpoint("max-md") {
+                            padding-left: 20px;
+                            font-size: 25px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+
+            }
+
+            .demo-commission-details-button {
+                button {
+                    background-color: $white;
+                    @include medium-border-radius;
+                    min-width: 144px;
+                    height: 45px;
+                    border-radius: 3px;
+                    border: 1px solid #C4DDFF;
+                    @include text-sm-bold;
+                    color: $blue-2;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .commission-details-section-left-right-padding {
+        // padding: 0 20px;
+
+        .commission-details-grid {
+            display: grid;
+            grid-template-columns: 420px minmax(0, 1fr);
+            gap: 0 30px;
+            padding: 30px 0 0 0;
+
+            @include breakpoint("max-md") {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 20px 0 0 0;
+                gap: 20px 0;
+            }
+
+            .commission-details-heading-grid-items:nth-child(1) {
+                padding: 15px;
+
+                @include breakpoint("max-md") {
+                    height: auto;
+                }
+            }
+
+            .commission-details-heading-grid-items {
+                box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+                border-radius: 5px;
+                background-color: $white;
+                height: calc(100vh - 162px);
+                overflow-y: auto;
+
+
+                .commission-tab-design {
+                    ul {
+                        li {
+                            border-bottom: 1px solid $table-border;
+                            @include text-md-bold;
+                            color: $blue-light;
+                            height: 57px;
+                            cursor: pointer;
+                            border-radius: 3px;
+                            padding: 0 10px;
+                            font-weight: 600;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .active {
+                            background: linear-gradient(0deg, rgb(243, 248, 255), rgb(243, 248, 255));
+                        }
+                    }
+                }
+
+                .commission-tab-design ul li:nth-child(1) {
+                    border-top: 1px solid #D1D9E6;
+                }
+
+            }
+
+            .commission-serch-left-align {
+                padding: 22px 22px 0 22px;
+                padding-right: 0px;
+            }
+
+            .staff-commission-member-serch {
+                position: relative;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .staff-commission-details-calender {
+                    padding-left: 10px;
+                    background-color: $white;
+                    @include medium-border-radius;
+                    // min-width: 50px;
+                    // height: 45px;
+                    border-radius: 3px;
+                    border: 1px solid #C4DDFF;
+                    @include text-sm-bold;
+                    color: $blue-2;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.5rem;
+                    padding: 5px;
+
+
+                    img {
+                        width: 14px;
+                    }
+
+                    span {
+                        width: 65px;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #193566;
+                        input{
+                            width: 65px;
+                        }
+                    }
+
+                    .date-picker-style {
+                        .react-datepicker__tab-loop {
+                            .react-datepicker-popper {
+                                // transform: translate(-12px, 32px) !important;
+                                .react-datepicker {
+                                    border: 1px solid #c4ddff;
+                                    .react-datepicker__month-container {
+                                        .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+                                            background-color: transparent !important;
+                                            border-bottom-color: transparent;
+                                            padding-top: 14px;
+                                        }
+                                        .react-datepicker__month {
+                                            .react-datepicker__month-wrapper {
+                                                .react-datepicker__month-text {
+                                                    padding: 10px;
+                                                }
+                                                .react-datepicker__month-text--keyboard-selected {
+                                                    background-color: #1479ff;
+                                                }              
+                                            }
+                                        }                          
+                                    }
+                                    .react-datepicker__navigation {
+                                        top: 8px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .serch-input-two-tab-display-flex {
+                    margin-right: 22px;
+                    display: flex;
+                    gap: 1rem;
+                }
+
+                .staff-commission-member-search-alignment {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 10px;
+                }
+
+                .staff-commission-input-design {
+                    input {
+                        width: 500px;
+                        height: 38px;
+                        background-color: $blue-opacity;
+                        @include text-sm-bold;
+                        padding-left: 31px;
+                        border-radius: 3px;
+                        cursor: text;
+                        padding-right: 20px;
+                        color: $blue-light;
+                        font-weight: 500;
+                    }
+
+                    ::placeholder {
+                        @include text-sm-bold;
+                        font-weight: 500;
+                        color: $gray-2;
+                    }
+
+                }
+
+
+
+                .staff-commission-position-relative {
+                    position: relative;
+
+                    .all-staff-selected-input-deign {
+
+                        input {
+                            width: 192px;
+                            height: 38px;
+                            border: 1px solid rgba(20, 121, 255, 0.5);
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px;
+                        }
+
+                        ::placeholder {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 13px;
+                            line-height: 18px;
+                            color: #193566;
+
+                        }
+                    }
+
+                }
+            }
+
+            .staff-commision-membership-gold-table {
+                max-width: 100%;
+                padding: 0 22px 0 0;
+                height: calc(100vh - 250px);
+                overflow: auto;
+                overflow-x: hidden;
+
+
+                table {
+                    width: 100%;
+
+                    .invoice-blue-color {
+                        color: $blue-2;
+                    }
+
+                    tr {
+                        border-bottom: 1px solid $table-border;
+                        border-top: none;
+
+                        th {
+                            padding: 0 10px 23px 0;
+                            @include text-sm-bold;
+                            color: $blue-light;
+                            font-weight: 500;
+                        }
+
+                        td {
+                            padding: 16px 0;
+
+                            span {
+                                display: block;
+                                @include text-sm-bold;
+                                color: $blue-light;
+                                font-weight: 500;
+
+                                a {
+                                    font-family: 'Roboto', sans-serif
+                                }
+                            }
+                        }
+                    }
+                }
+
+               
+
+                .arrow-down-img-center {
+
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+
+                        background: #FFFFFF;
+                        border: 1px solid #D1D7E0;
+                        border-radius: 3px;
+                        padding: 11px 8px 11px 8px;
+                    }
+
+                }
+
+                .commission-staff-details-box {
+                    background: #FFFFFF;
+                    border: 1px solid #C4DEFF;
+                    border-radius: 3px;
+                    margin-top: 15px;
+
+
+
+                    .commission-staff-details-box-padding {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 15px 22px;
+                        border-bottom: 1px solid #C4DEFF;
+
+                    }
+
+                    span {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        display: flex;
+                        align-items: center;
+                        color: #193566;
+
+                        &.commission-color {
+                            color: #1479FF;
+                        }
+                    }
+
+                    .staff-commission-box-details-display {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .staff-commission-box-details-display-width {
+                            width: 50%;
+
+                            .staff-commission-box-details-display-border-right {
+                                border-right: 1px solid #C4DEFF;
+                            }
+
+                            .staff-commission-box-details-display-padding {
+                                padding: 15px 22px;
+
+                                .staff-commissiom-box-details-width-box {
+                                    width: 260px;
+
+                                    h1 {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 15px;
+                                        line-height: 25px;
+                                        color: #193566;
+                                    }
+
+                                    P {
+                                        font-family: 'Poppins';
+                                        font-style: normal;
+                                        font-weight: 500;
+                                        font-size: 13px;
+                                        line-height: 18px;
+                                        color: #193566;
+                                    }
+                                }
+
+
+                            }
+
+                        }
+
+                    }
+
+
+                }
+            }
+
+            .transation-commission-details-gold-table {
+                max-width: 100%;
+                padding-right: 22px;
+                // padding: 0 22px;
+                height: calc(100vh - 250px);
+                overflow: auto;
+                overflow-x: hidden;
+
+                table {
+                    width: 100%;
+
+                    .invoice-blue-color {
+                        color: $blue-2;
+                    }
+                    tr:nth-child(1) {
+                        border-bottom: 1px solid $table-border !important;
+                    }
+                    tr {
+                        border: none;
+
+                        th {
+                            padding: 15px 0;
+                            @include text-sm-bold;
+                            color: $blue-light;
+                            font-weight: 500;
+                        }
+
+                        td {
+                            padding: 15px 0;
+                            word-break: break-all;
+
+                            span {
+                                display: block;
+                                @include text-sm-bold;
+                                color: $blue-light;
+                                word-break: break-word;
+                                font-weight: 500;
+
+                                a {
+                                    font-family: 'Roboto', sans-serif
+                                }
+                            }
+                        }
+                    }
+                }
+
+              
+
+            }
+
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.table-dynamic-width {
+    max-width: 260px;
+    @include breakpoint("max-xl") {
+        max-width: 180px;
+    }
+    @include breakpoint("max-md") {
+        max-width: 100px;
+    }
+}

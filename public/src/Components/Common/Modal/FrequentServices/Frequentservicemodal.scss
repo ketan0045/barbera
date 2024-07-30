@@ -1,0 +1,474 @@
+@import "../../../../Styles/mixins/breakpoint.scss";
+@import "../../../../Styles/mixins/color.scss";
+@import "../../../../Styles/mixins/typography.scss";
+@import "../../../../Styles/layout/container.scss";
+@import "../../../../Styles/mixins/pixel.scss";
+
+.modal-header-servicefrequent{
+    background-color: $white;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    padding: calc($normal-pixel * 5 - 0px) 0;
+    border-radius: calc($normal-pixel * 2 - 0px);
+
+    @include breakpoint("max-md") {
+        padding: 20px 0;
+    }
+
+    .modal-header-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .custom-modal-heading-title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .close-head-wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            .custom-addnew-btn {
+                color: #1479FF;
+                margin: 0px 10px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                width: 102px;
+                height: 33px;
+                background: #FFFFFF;
+                border: 1px solid #89BCFF;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+
+            .custom-save-btn {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #fff;
+                width: 102px;
+                height: 33px;
+                background: #1479FF;
+                border-radius: 3px;
+            }
+        }
+
+        .modal-heading-title {
+            display: flex;
+            align-items: center;
+        }
+
+        .modal-close {
+            width: 45px;
+            cursor: pointer;
+            height: 45px;
+            background-color: $modal-background;
+            @include medium-border-radius;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+        .modal-title {
+            h2 {
+                margin: 0;
+                @include heading-3;
+                color: $blue-light;
+                font-size: 25px;
+                line-height: 33px;
+                padding-left: 25px;
+
+                @include breakpoint("max-md") {
+                    padding-left: 20px;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .modal-button {
+            button {
+                background: $blue-2;
+                padding: 5px 15px;
+                min-width: 144px;
+                height: 45px;
+                color: $white;
+                @include text-sm-bold;
+                font-size: calc($normal-pixel * 3 - 0px);
+                @include medium-border-radius;
+            }
+        }
+    }
+}
+
+.add-servicefrequent-mini-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f6fbff91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999999;
+    animation-name: round;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+
+    .add-service-mini-modal-design {
+        width: 640px;
+        height: calc(100vh - 60px);
+        background-color: #fff;
+        box-shadow: 0px 4px 10px #d1d9e680;
+    }
+
+    .custom-add-service-modal {
+        width: 640px;
+        height: 60vh;
+
+        .mini-service-membership-modal-body {
+            height: calc(100% - 136px);
+        }
+    }
+}
+.alignment-counter-modal-header-servicefrequent {
+    display: flex;
+    align-items: center;
+
+    .product-consumption-head {
+        font-size: 18px !important;
+    }
+}
+.mini-service-Frquent-modal-body {
+    padding: 0 30px 22px 30px;
+    overflow: auto;
+    overflow-x: hidden;
+    height: calc(100vh - 259px - 51px - 24px - 24px);
+
+    .left-right-alignment-tratment {
+        padding: 15px 0;
+        border-bottom: 1px solid $table-border;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-right-input-wrap {
+            width: 92px;
+            height: 41px;
+            background: #FFFFFF;
+            border: 1px solid #D1D9E6;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-right: 12px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+
+            .custom-left-right-input {
+                width: 47px;
+                height: 100%;
+                padding: 0 6px;
+                border-right: 1px solid #D1D9E6;
+            }
+
+            span {
+                width: 45px;
+                padding: 0 6px;
+            }
+        }
+
+        .custom-modal-subhead {
+            display: block !important;
+
+            h6 {
+                @include text-sm;
+                color: #193566;
+                margin: 0 0 5px 0;
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 500;
+                color: #193566;
+                margin: 0;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            margin-right: 7px;
+            padding: 0;
+
+        }
+
+        p {
+            @include text-sm;
+            color: $blue-light;
+            margin: 0;
+
+            a {
+                font-family: 'Roboto', sans-serif
+            }
+        }
+    }
+
+    .treatment-box-design {
+        border: 1px solid rgba(20, 121, 255, 0.5);
+        margin-bottom: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 15px;
+
+      
+
+        .left-right-alignment-tratment:last-child {
+            border-bottom: none;
+            padding-bottom: none;
+        }
+
+        .treatment-header-grid {
+            display: grid;
+            grid-template-columns: 1fr 0px;
+            // padding-bottom: 14px;
+            // border-bottom: 1px dashed $table-border;
+            gap: 0 10px;
+            justify-content: space-between;
+
+            .treatment-header-grid-items:nth-child(1) {
+                display: grid;
+                gap: 0 10px;
+             
+    grid-template-columns: 352px 1fr;
+
+                align-items: center;
+            }
+
+            .treatment-header-grid-items {
+                position: relative;
+
+                input[type="checkbox"] {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 7px;
+                    padding: 0;
+                }
+
+                h2 {
+                    color: $blue-light;
+                    @include text-md-bold;
+                    margin: 2px 0 0 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 21px;
+                }
+
+                h2.categoryname {
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+
+                .open-close-button {
+                    width: 30px;
+                    border: 1px solid #D1D7E0;
+                    border-radius: 3px;
+                    height: 28px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    .treatment-heading {
+        position: relative;
+        padding-left: 12px;
+        line-height: 20px;
+    }
+
+    
+
+    .treatement-head-color {
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        left: 1px;
+        top: 2px;
+        // background: #F5CBFF;
+        border-radius: 5px;
+    }
+
+    .ratedetails{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .minute {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: right;
+        color: #193566;
+        font-family: 'Poppins';
+           
+        }
+        h3 {
+              font-family: "Poppins", sans-serif !important;
+
+        }
+        .rateNumber {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: right;
+            color: #193566;
+            a {
+                font-family: 'Roboto' !important;
+                display: flex;
+                align-items: center;
+
+            }
+        }
+
+        .RightImageSize{
+            margin-left: 15px;
+            display: flex;
+            width: 20px;
+            margin-right: 10px;
+        }
+    
+
+}
+.ratePadding{
+    padding-right: 15px;
+}
+
+.bluebackground{
+    background: #F3F8FF;
+}
+
+.serchbardesign{
+    background: #ECF4FF;
+    border: 1px solid rgba(20, 121, 255, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 90%;
+    padding: 10px 15px;
+    display: flex;
+    margin: 22px 28px 22px 28px;
+
+    .inventory-search {
+        position: relative;
+        display: flex;
+        input {
+            width: 500px;
+            background: transparent;
+            height: 38px;
+            padding-left: 20px;
+            font-weight: 500;
+            padding-right: 15px;
+            cursor: text !important;
+            color: #97A7C3 !important;
+      
+        }
+    }
+}
+
+.lineboder{
+    border: 1px solid #D1D9E6;
+}
+
+.footercontine{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    gap: 20px;
+    margin-top: 20px;
+
+    .btndesign{
+        width: 130px;
+        background: #1479FF;
+        border-radius: 3px;
+    
+        .btntext {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 15px 15px 15px 25px;
+        }
+    }
+    
+    .selectedService{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    
+    color: #193566;
+    
+    opacity: 0.5;
+    }
+
+    .paddingsearch{
+        padding: 22px 30px;
+    }
+    
+}
+
+.treatment-box-design:hover{
+
+        background: #F3F8FF;
+}
+
+
+
+.ratedetails-new-style {
+    h4 {
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #193566;
+        a {
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+
+.frequentService-container-right-remove {
+    margin-right: 0px !important;
+}
+
+.frequentService-item-contain-height {
+    height: calc(100vh - 250px);
+    overflow: auto;
+    overflow-x: hidden;
+}

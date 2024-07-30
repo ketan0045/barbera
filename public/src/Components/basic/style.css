@@ -1,0 +1,9 @@
+.add-new{
+    padding: 10px 23px;
+    min-width: 195px;
+    min-height: 45px;
+    white-space: nowrap;
+    background-color: #193566 !important;
+    border: none !important;
+    box-shadow: none;
+}

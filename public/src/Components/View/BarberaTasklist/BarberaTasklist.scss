@@ -1,0 +1,165 @@
+@import '../../../Styles/mixins/global.scss';
+
+.barbera-tasklist-title {
+    padding: 30px 0;
+    h1 {
+        @include heading-3;
+        color: #193566;
+        margin: 0;
+    }
+}
+
+.task-list-box-center-alignment {
+    display: flex;
+    justify-content: center;
+    .task-list-box {
+        width: 640px;
+        min-height: 500px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 10px;
+        .step-alignment-all {
+            padding: 0 54px;
+            .radio-label-alignment:last-child {
+                border: none;
+            }
+            .radio-label-alignment {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #C4DDFF;
+                padding: 15px 0;
+                div:last-child {
+                    padding-left: 10px;
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    input[type="radio"] {
+                        width: 18px;
+                        height: 18px;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    span {
+                        @include text-small-bold;
+                        color: #193566;
+                        display: block;
+                    }
+
+                }
+            }
+        }
+        .task-list-body {
+            padding: 21px 22px;
+            .tasklist-time-line-bottom {
+                border-bottom: 1px solid #C4DDFF;
+            }
+            .task-timeline-border {
+                border-radius: 10px;
+                border: 1px solid #8ABCFF;
+                margin: 0 0 21px 0;
+            
+            }
+            .tasklist-time-line {
+                display: grid;
+                padding: 15px;
+                grid-template-columns: 24px minmax(0 , 1fr);
+                gap: 0 15px;
+                align-items: center;
+                .tasklist-time-line-items {
+                    .start-timeline-button-align {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        div {
+                            button {
+                                padding: 10px 35px;
+                                color: #fff;
+                                background: #1479FF;
+                                border-radius: 5px;
+                                @include text-small-bold;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                    .timeline-design {
+                        width: 24px;
+                        height: 24px;
+                        border: 0.75px solid #C4DDFF;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        span {
+                            @include text-small-bold;
+                            color: #1479ff;
+                            display: block;
+                        }
+                    }
+                    h2 {
+                        @include heading-4;
+                        color: #193566;
+                        margin: 0 0 5px 0;
+                    }
+                    p {
+                        @include text-small-bold;
+                        color: #475D85;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .task-list-box-header {
+            padding: 19px 22px 22px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #D1D9E6;
+            .progress-align {
+                display: flex;
+                align-items: center;
+                .cus-progress {
+                    position: relative;
+                    width: 100px;
+                    height: 7px;
+                    background: #C4DDFF;
+                    border-radius: 7px;
+                    .progress-flow {
+                        width: 25%;
+                        background: #1479FF;
+                        border-radius: 7px;
+                        height: 100%;
+                        position: absolute;
+                    }
+                }
+                .cus-details {
+                    padding-left: 16px;
+                    span {
+                        font-size: 8px;
+                        color: #193566;
+                        font-weight: 600;
+                        display: block;
+                        text-align: center;
+                        font-family: "Poppins", sans-serif ;                        
+                        line-height: 12px;
+                    }
+                    h3 {
+                        @include text-sm-bold;
+                        color: #193566;
+                        text-align: center;
+                        margin: 0;
+                    }
+                }
+
+            }
+            div {
+                h2 {
+                    @include text-md-bold;
+                    color: #193566;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

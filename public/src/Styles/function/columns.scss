@@ -1,0 +1,38 @@
+@function col($count: 1, $columns: 12) {
+  @return percentage($count / $columns);
+}
+
+$size:(
+  sm:5px,
+  md:10px,
+  lg:15px,
+  xl:20px,
+  null:0
+);
+
+@function size-type($size-use) {
+  @return map-get($size, $size-use ); 
+}
+
+$css-use:(
+  flex:flex,
+  relative:relative,
+  center:center,
+  grid:grid,
+  left:left,
+  right:right,
+  pointer:pointer,
+);
+
+$colors:(
+  blue-border-color:#83B9FF,
+  blue-text-color:#1479FF
+);
+
+@function color-type($color-list) {
+  @return map-get($colors, $color-list);
+}
+
+@function css-type($css-list) {
+  @return map-get($css-use, $css-list);
+}

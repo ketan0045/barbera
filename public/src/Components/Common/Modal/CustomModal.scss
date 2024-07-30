@@ -1,0 +1,270 @@
+.custom-modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .custom-modal {
+        width: 412px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 5px;
+        .custom-modal-header {
+            height: 71px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 22px;
+            .modal-close {
+                height: 27px;
+                width: 27px;
+                font-size: 12px;
+                background: #1479ff12;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .close {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+            .custom-modal-title {
+                margin-left: 10px;
+                color: #193566;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                font-family: 'Poppins';
+            }
+        }
+        .custom-modal-body {
+            padding: 30px 22px;
+            .content-wrapper {
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+                .total-stocks {
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 10px;
+                    line-height: 15px;
+                    display: flex;
+                    align-items: center;
+                    color: #193566;
+                }
+                .custom-modal-head {
+                    color: #193566;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+                .custom-modal-subhead {
+                    color: #193566b3;
+                    font-family: 'Poppins';
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+            .form-wrapper {
+                form {
+                    .input-wrapper {
+                        margin-top: 15px;
+                        .selectMenu {
+                            text-align: left;
+                            padding: 12px 20px;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            display: flex;
+                            align-items: center;
+                            color: #193566;
+                        }
+                        .label {
+                            color: #193566;
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            margin-bottom: 2px;
+                        }
+                        input {
+                            height: 51px;
+                            width: 100%;
+                            background: #FFFFFF;
+                            border: 1px solid #D1D9E6;
+                            box-sizing: border-box;
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #193566;
+                            border-radius: 3px;
+                            padding: 12px 60px;
+                            text-align: center;
+                        }
+                        ::placeholder {
+                            font-size: 14px;
+                            font-weight: 500 !important;
+                        }
+                        .custom-input{
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 21px;
+                            padding: 15px;
+                            text-align: left;
+                        }
+                        select {
+                            height: 51px;
+                            width: 100%;
+                            background: #FFFFFF;
+                            border: 1px solid #D1D9E6;
+                            box-sizing: border-box;
+                            border-radius: 3px;
+                            padding: 0 15px;
+                            appearance: none;
+                            background-image: none;
+                        }
+                        select::-ms-expand {
+                            display: none;
+                          }
+                          /* Custom Select wrapper */
+                          /* Arrow */
+                          /* Transition */
+                          /* Other styles*/
+                          body {
+                            color: #fff;
+                            background: var(--background-gradient);
+                          }
+                          h1 {
+                            margin: 0 0 0.25em;
+                          }
+                          a {
+                            font-weight: bold;
+                            color: var(--gray);
+                            text-decoration: none;
+                            padding: .25em;
+                            border-radius: .25em;
+                            background: white;
+                          }
+                        .quantity-wrapper {
+                            position: relative;
+                            .stock-btn {
+                                .stock-design {
+                                    font-size: 20px;
+                                    color: #1479FF;
+                                    height: 51px;
+                                    width: 51px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid #89BCFF;
+                                    border-radius: 3px;
+                                    top: 0;
+                                    left: 0;
+                                    position: absolute;
+                                }
+                                .stock-insign {
+                                    font-size: 20px;
+                                    color: #1479FF;
+                                    height: 51px;
+                                    width: 51px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid #89BCFF;
+                                    border-radius: 3px;
+                                    top: 0;
+                                    right: 0;
+                                    position: absolute;
+                                }
+                            }
+                        }
+                        .quantity-wrapper-validation {
+                            position: relative;
+                            outline: 1px solid #E66666;
+                            outline-offset: -1px;
+                            border-radius: 3px;
+                            .stock-btn {
+                                .stock-design {
+                                    font-size: 20px;
+                                    color: #1479FF;
+                                    height: 51px;
+                                    width: 51px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid #89BCFF;
+                                    border-right: 1px solid #E66666;
+                                    border-radius: 3px 0 0 3px; 
+                                    top: 0;
+                                    left: 0;
+                                    position: absolute;
+                                }
+                                .stock-insign {
+                                    font-size: 20px;
+                                    color: #1479FF;
+                                    height: 51px;
+                                    width: 51px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid #89BCFF;
+                                    border-left: 1px solid #E66666;
+                                    border-radius: 0 3px 3px 0;
+                                    top: 0;
+                                    right: 0;
+                                    position: absolute;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .custom-modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 22px 30px;
+            .custom-btn-wrapper {
+                display: flex;
+                align-items: center;
+                .custom-cancel-btn {
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #1479FF;
+                    margin-right: 15px;
+                }
+                .custom-save-btn {
+                    height: 40px;
+                    width: 127px;
+                    font-family: 'Poppins';
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #fff;
+                    background: #1479FF;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    .visible-wrapper {
+        display: block;
+        opacity: 1;
+    }
+    .hidden-wrapper {
+        display: none;
+        opacity: 0;
+    }
+}

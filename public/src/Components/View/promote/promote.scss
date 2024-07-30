@@ -1,0 +1,172 @@
+@import '../../../Styles/mixins/global.scss';
+
+
+.promote-box-design {
+    background-color: #fff;
+    height: calc(100vh - 105px - 30px - 98px);
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .promote-box-left-alignment {
+        padding-left: 170px;
+
+        .two-button-alignment {
+            display: flex;
+            align-items: center;
+
+            button {
+                padding: 11px 18px;
+                border: none;
+                border-radius: 3px;
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 600;
+            }
+
+            button:first-child {
+                background: #1479FF;
+                color: #fff;
+            }
+
+            button:last-child {
+                color: #1479FF;
+                background: #F6FBFF;
+                margin-left: 35px;
+            }
+        }
+
+        h1 {
+            @include heading-3;
+            margin: 0 0 22px 0;
+            color: #193566;
+        }
+
+        p {
+            @include text-md-bold;
+            line-height: 27px;
+            color: #193566;
+            margin: 0 0 15px 0;
+        }
+
+        span {
+            font-size: 15px;
+            line-height: 22px;
+            color: #53688C;
+            display: block;
+            font-weight: 500;
+        }
+
+        .icon-text-grid-alignment {
+            padding: 10px 0 40px 0;
+
+            .icon-text-grid {
+                display: grid;
+                grid-template-columns: 21px 1fr;
+                gap: 5px;
+                margin: 0 0 10px 0;
+
+                .icon-text-grid-items {
+                    h6 {
+                        font-size: 15px;
+                        line-height: 22px;
+                        font-weight: 500;
+                        color: #53688C;
+                    }
+                }
+            }
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 494px;
+        height: 100%;
+        background-image: url("../../../assets/img/promote-vectore.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        content: "";
+    }
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        right: 220px;
+        transform: translateY(-50%);
+        background-image: url("../../../assets/img/promote-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 311px;
+        content: "";
+        height: 573px;
+    }
+}
+
+
+.prmote-success-modal-blur {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    z-index: 999999999;
+
+    .schedule-modal {
+        width: 500px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 10px;
+        padding: 30px 25px;
+
+        .image-center-alignment {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+        .close-button-style {
+            span {
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 500;
+                text-align: right;
+                display: block;
+                color: #1479FF;
+                cursor: pointer;
+            }
+        }
+
+        .child-text-style {
+            padding: 0 0 42px 0;
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #193566;
+                max-width: 320px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        h1 {
+            font-size: 22px;
+            line-height: 33px;
+            color: #193566;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}

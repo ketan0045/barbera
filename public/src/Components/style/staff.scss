@@ -1,0 +1,158 @@
+$staff-background-profile-color:#D1D9E6;
+$staff-add-background-color:$body-banner-color;
+$btn-hover-text-color:$primary;
+.staff-box-height {
+    height: calc(100vh - 129px);
+}
+.staff-profile {
+    img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+.staff-profile-main:hover {
+    background-color: $staff-background-profile-color;
+}
+.staff-profile-main {
+    border-radius: 8px;
+    transition: .3s;
+}
+.staff-edit-none {
+    opacity: 0;
+    transition: .3s;
+}
+.staff-profile-main:hover .staff-edit-none {
+    opacity: 1;
+}
+.staff-add-banner {
+    background: $staff-add-background-color;
+    border-radius: 8px;
+}
+.staff-name {
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+.staff-profile-card1 {
+    height: calc(100vh - 222px);
+    overflow: auto;
+    // height: calc(100vh - 130px);
+    overflow-x: hidden;
+                    }
+.staff-profile-card {
+    // height: calc(100vh - 222px);
+    overflow: auto;
+    height: calc(100vh - 130px);
+    overflow-x: hidden;
+                    }
+                                    .add-new-button-height {
+                                    overflow-x: hidden;
+                                    overflow: auto;
+                                    height: calc(100vh - 222px);
+}
+.staff-profile-data {
+    // height: calc(100vh - 222px);
+    height: calc(100vh - 130px);
+    overflow-x: hidden !important;
+    overflow: auto;
+}
+                                    .staff-button-show-height {
+                                    height: calc(100vh - 222px);
+                                    overflow-x: hidden !important;
+                                    overflow: auto;
+}
+.working-hour-btn {
+    border-radius: 8px;
+    min-height: 45px;
+    padding: 10px 25px;
+    white-space: nowrap;
+    transition: .3s;
+    // &:hover {
+    //     background: rgba(236, 240, 243, 0.7);
+    //     box-shadow: -9px -9px 18px #FFFFFF, 4px 4px 12px rgba(151, 167, 195, 0.3);
+    //     color: #193566!important;
+    // }
+}
+.staff-active-btn {
+    background: rgba(236, 240, 243, 0.7);
+    box-shadow: -9px -9px 18px #FFFFFF, 4px 4px 12px rgba(151, 167, 195, 0.3);
+    color: #193566!important;
+}
+.dark-blue-color{
+    color: #193566 !important;
+}
+.open-day-data tr {
+    height: 70px !important;
+}
+@media (min-width:768px) and (max-width:1500px) {
+    .open-day-data tr {
+        height: 60px !important;
+    }
+}
+
+.mobile-view-mt-1 {
+    select {
+        min-width: 135px !important;
+        cursor: pointer;
+        font-size: 13px !important;
+        min-height: 40px !important;
+    }
+}
+
+
+.date-picker-grid {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    justify-content: space-between;
+    gap: 0 20px;
+    .date-picker-grid-items {
+        input {
+            background: #ECF0F3;
+            width: 100%;
+            box-shadow: inset 5px 5px 10px #97a7c380, inset -5px -5px 5px #ffffff;
+            border-radius: 8px;
+            height: 45px !important;
+            padding: 0.375rem 0.75rem;
+            color: #193566 !important;
+            font-size: 19px;
+        }
+    }
+}
+.time-dropdown-sets {
+    input {
+        max-width: 100px;
+        background: #ecf0f3;
+        // box-shadow: -4px -4px 8px #fff, 4px 4px 8px #1935661a;
+        // border-radius: 8px;
+        min-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        // padding: 10px;
+        border-bottom: 1px solid #193566;
+        width: 76px;
+        color: #193566!important;
+    }
+    .react-datepicker__header{
+        background-color: #ecf0f3 !important; 
+        border: none !important;
+        .react-datepicker-time__header {
+            font-family: "Poppins", sans-serif !important;
+            color: #193566!important;
+        }
+    }
+    .react-datepicker {
+        background: #ecf0f3 !important;
+        ul {
+            li {
+                font-size: 14px;
+                font-weight: 500;
+                color: #193566!important;
+                font-family: "Poppins", sans-serif !important;
+            }
+        }
+    }
+}

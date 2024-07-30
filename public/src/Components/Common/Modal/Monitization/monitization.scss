@@ -1,0 +1,694 @@
+@import '../../../../Styles/mixins/global.scss';
+
+.trial-modal-box {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 10px;
+    width: 500px;
+
+    .skipcontent {
+        text-align: right;
+        color: #4F7194;
+        margin-top: 22px;
+        margin-right: 22px;
+        cursor: pointer;
+
+
+        h5 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: #193566;
+        }
+
+    }
+
+    .image-center-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 22px 0;
+
+        img {
+            max-width: 350px;
+        }
+    }
+
+    .view-user-behaviour-alignment {
+        display: flex;
+        align-items: center;
+        padding: 22px 25px;
+        border-top: 1px solid #D1D9E6;
+        justify-content: space-between;
+
+        span {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #1479FF;
+            display: block;
+            padding: 0 13px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px 53px;
+            font-style: normal;
+            background: #1479FF;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            border: none;
+            color: #fff;
+
+        }
+    }
+
+    .child-text-alignment {
+        padding: 0 25px 22px 25px;
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #193566;
+            font-weight: 500;
+            margin: 0;
+            text-align: center;
+        }
+
+    }
+
+    .box-center-alignment {
+        padding: 10px 0 15px 0;
+
+        p {
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 600;
+            color: #193566;
+            text-align: center;
+        }
+
+    }
+}
+
+
+
+
+
+.plan-details-modal-design {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f7fbff;
+    z-index: 999999999;
+
+    .modal-header {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 10px;
+        padding: 30px;
+
+        .header-alignment {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .button {
+                button {
+                    padding: 11px;
+                    background: #FFFFFF;
+                    border: 1px solid #8ABCFF;
+                    font-size: 15px;
+                    color: #1479FF;
+                    line-height: 22px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        padding-left: 5px;
+                    }
+                }
+            }
+
+            .menu {
+                display: flex;
+                align-items: center;
+
+                img {}
+
+                div {
+                    width: 45px;
+                    cursor: pointer;
+                    height: 45px;
+                    background-color: #edf5ff;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        max-width: 17px;
+                    }
+                }
+
+                h2 {
+                    font-size: 30px;
+                    line-height: 45px;
+                    font-weight: 600;
+                    color: #193566;
+                    margin: 0;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    .plan-details-modal-body {
+        .all-box-center-alignment {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+
+            .plan-details-data {
+                width: 770px;
+
+                .grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 50px;
+
+                    .grid-items {
+                        .white-box {
+                            background: #FFFFFF;
+                            border: 1px solid #C4DEFF;
+                            box-shadow: 0px 5px 20px rgba(209, 217, 230, 0.3);
+                            border-radius: 10px;
+
+                            .pay-now-button {
+                                padding: 22px 22px 15px 22px;
+
+                                button {
+                                    padding: 12px;
+                                    width: 100%;
+                                    height: 45px;
+                                    color: #FFF;
+                                    color: fff;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    font-weight: 600;
+                                    background: #1479FF;
+                                    border-radius: 6px;
+                                    border: none;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .inclusive-gst-tag {
+                                padding: 0 22px 15px 22px;
+                                display: flex;
+                                align-items: center;
+
+                                .tag-content-alignment {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+
+                                    div {
+                                        p {
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            font-weight: 500;
+                                            color: #1479ff;
+                                            margin: 0;
+
+                                            a {
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                font-weight: 500;
+                                                color: rgba(25, 53, 102, 0.75);
+                                                ;
+                                                font-family: "Poppins", sans-serif;
+                                            }
+                                        }
+
+
+                                    }
+                                }
+
+                            }
+
+                            .barbera-final-price-content-alignment {
+                                padding: 22px;
+                                border-bottom: 1px solid #C4DEFF;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                div {
+                                    p {
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        font-weight: 500;
+                                        color: #193566;
+                                        margin: 0;
+                                    }
+
+                                    h6 {
+                                        color: #1479FF;
+                                        font-size: 32px;
+                                        line-height: 40px;
+                                        font-weight: 600;
+
+                                        span {
+                                            font-weight: 400;
+                                            font-family: 'Roboto', sans-serif;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .barbera-basic-sec-content-alignment {
+                                padding: 22px;
+                                border-bottom: 1px solid #C4DEFF;
+
+                                .remove-text-all-content-alignment {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    .remove-text {
+                                        cursor: pointer;
+
+                                        h6 {
+                                            color: #E66666;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            margin: 0;
+                                            font-weight: 500;
+                                        }
+                                    }
+
+                                    .coupon-content-alignment {
+                                        display: flex;
+                                        align-items: center;
+
+                                        div+div {
+                                            padding-left: 3px;
+                                        }
+
+                                        div {
+                                            p {
+                                                font-size: 12px;
+                                                line-height: 18px;
+                                                font-weight: 500;
+                                                color: #1479ff;
+                                                margin: 0;
+
+                                                a {
+                                                    font-size: 12px;
+                                                    line-height: 18px;
+                                                    font-weight: 500;
+                                                    color: #475D85;
+                                                    font-family: "Poppins", sans-serif;
+                                                }
+                                            }
+
+                                            span {
+                                                font-size: 14px;
+                                                line-height: 18px;
+                                                cursor: pointer;
+                                                font-weight: 500;
+                                                color: #1479ff;
+                                                margin: 0;
+                                            }
+
+                                        }
+                                    }
+                                }
+
+                                .discount-contnet-box {
+                                    background: #FFFFFF;
+                                    border: 1px dashed #1479FF;
+                                    border-radius: 5px;
+                                    padding: 15px;
+                                    display: flex;
+                                    margin: 0 0 6px 0;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    div {
+                                        h4 {
+                                            color: #1479FF;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            font-weight: 500;
+                                            margin: 0;
+
+                                            span {
+                                                font-family: 'Roboto', sans-serif;
+                                                font-weight: 500;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .all-row-content-alignment {
+                                    .row-content-alignment {
+                                        padding: 0 0 15px 0;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                    }
+
+                                    div {
+                                        h3 {
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            color: #193566;
+                                            font-weight: 500;
+                                            margin: 0;
+
+                                            span {
+                                                font-family: 'Roboto', sans-serif;
+                                                font-weight: 400;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .amount-to-pay-title {
+                                padding: 22px;
+                                border-bottom: 1px solid #C4DEFF;
+
+                                h2 {
+                                    font-size: 18px;
+                                    line-height: 27px;
+                                    font-weight: 600;
+                                    color: #193566;
+                                    margin: 0;
+                                }
+                            }
+
+                            .barbera-basic-icon-text-alignment {
+                                padding: 22px;
+
+                                .icon-text-box-title {
+                                    padding: 0 0 15px 0;
+
+                                    h2 {
+                                        font-size: 15px;
+                                        line-height: 22px;
+                                        font-weight: 500;
+                                        color: #475D85;
+                                        margin: 0;
+                                    }
+                                }
+
+                                .all-icon-text-grid-alignment {
+                                    .icon-text-grid:last-child {
+                                        padding: 0;
+                                    }
+                                }
+
+                                .icon-text-grid {
+                                    display: grid;
+                                    grid-template-columns: 18px 1fr;
+                                    gap: 10px;
+                                    padding: 0 0 15px 0;
+
+                                    .icon-text-grid-items {
+                                        display: flex;
+
+                                        span {
+                                            color: #475D85;
+                                            font-size: 15px;
+                                            line-height: 22px;
+                                            font-weight: 500;
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .barbera-basic-content-style {
+                                padding: 22px;
+                                border-bottom: 1px solid #C4DEFF;
+
+                                h2 {
+                                    font-size: 18px;
+                                    margin: 0 0 5px 0;
+                                    line-height: 27px;
+                                    color: #193566;
+                                    font-weight: 600;
+                                }
+
+                                p {
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                    font-weight: 500;
+                                    color: #4F7194;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.apply-coupong-content-modal-alignment {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(246, 251, 255, .5686274509803921);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999;
+    -webkit-animation-name: round;
+    animation-name: round;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    .apply-coupon-modal {
+        width: 412px;
+        border-radius: 5px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 5px;
+
+        .apply-coupon-modal-body {
+            padding: 30px 22px;
+
+            .coupon-code-footer-alignment {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                button {
+                    cursor: pointer;
+                    border: none;
+                    padding: 10px 42px;
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 21px;
+                    background: #1479FF;
+                    border-radius: 3px;
+                    font-weight: 600;
+                }
+
+                span {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #1479FF;
+                    font-weight: 600;
+                    display: block;
+                    padding-right: 15px;
+                    cursor: pointer;
+                }
+            }
+
+            .coupon-code-input {
+                padding: 0 0 30px 0;
+
+                label {
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: 500;
+                    color: #193566;
+                    display: block;
+                    padding: 0 0 2px 0;
+                }
+
+                input {
+                    width: 100%;
+                    height: 54px;
+                    cursor: text;
+                    background: #FFFFFF;
+                    border: 1px solid #D1D9E6;
+                    border-radius: 3px;
+                    padding: 0 15px;
+                    color: #193566;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+
+                ::placeholder {
+                    opacity: 0.5;
+                    color: #193566;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .modal-header {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+            border-radius: 5px;
+            padding: 22px;
+            display: flex;
+            align-items: center;
+
+            div:first-child {
+                background-color: #edf5ff;
+                width: 27px;
+                height: 27px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            div+div {
+                padding-left: 10px;
+
+                h2 {
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #193566;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+.payment-sucess-modal-box {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 10px;
+    width: 500px;
+
+    .skipcontent {
+        text-align: right;
+        color: #4F7194;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+
+
+        h5 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: #193566;
+        }
+
+    }
+
+    .image-center-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 22px 0;
+
+        img {
+            padding: 30px 50px 0px 50px;
+            max-width: 350px;
+        }
+    }
+
+    .view-user-behaviour-alignment {
+        display: flex;
+        align-items: center;
+        padding: 22px 25px;
+        border-top: 1px solid #D1D9E6;
+        justify-content: space-between;
+
+        span {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #1479FF;
+            display: block;
+            padding: 0 13px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px 53px;
+            font-style: normal;
+            background: #1479FF;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            border: none;
+            color: #fff;
+
+        }
+    }
+
+    .child-text-alignment {
+        padding: 30px 50px 50px 50px;
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #193566;
+            font-weight: 500;
+            margin: 0;
+            text-align: center;
+        }
+
+    }
+
+    .box-center-alignment {
+        padding: 10px 0 15px 0;
+
+        p {
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 600;
+            color: #193566;
+            text-align: center;
+        }
+
+    }
+}

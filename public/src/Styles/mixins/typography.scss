@@ -1,0 +1,177 @@
+@use '../mixins/breakpoint.scss';
+
+@mixin heading-large {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+@mixin heading-1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+@mixin heading-2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+@mixin heading-3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+@mixin heading-4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-weight: 24px;
+  line-height: 1.5;
+}
+
+@mixin heading-5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin heading-5-bold {
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+@mixin heading-6-bold {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+@mixin heading-7 {
+  font-size: 26px;
+  line-height: 31px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+@mixin heading-8 {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+@mixin text-md {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@mixin text-md-bold {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+@mixin text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@mixin text-bold {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin text-sm {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@mixin text-sm-medium {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+@mixin text-sm-bold {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+@mixin text-small-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin text-small {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+@mixin gray-text-color {
+  color: rgba(25, 53, 102, 0.7);
+}
+
+// box-shadow
+
+@mixin box-shadow-input {
+  background: #ECF0F3;
+  height: 40px;
+  box-shadow: -3px -3px 6px #FFFFFF, 3px 3px 6px rgba(151, 167, 195, 0.4), inset 3px 3px 6px rgba(151, 167, 195, 0.4), inset -3px -3px 6px #FFFFFF;
+}
+
+@mixin input-form-control {
+  padding: .375rem .75rem;
+}
+
+@mixin normal-border-radius {
+  border-radius: 5px;
+}
+
+@mixin medium-border-radius {
+  border-radius: 3px;
+}
+
+@mixin medium-box-shadow {
+  box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+}
+
+
+
+@mixin same-box-design {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+  border-radius: $normal-pixel;
+}
+
+
+
+@mixin font-weight {
+  font-weight: 500 !important;
+}

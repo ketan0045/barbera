@@ -1,0 +1,126 @@
+.modal-bluer-outer {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 999999999;
+}
+
+.modal-box {
+    height: 60vh;
+    width: 30vw;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 99999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modal-content-body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .skipcontent {
+            padding: 20px 25px 0;
+            cursor: pointer;
+        }
+    }
+
+    .imageWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skipcontent {
+        text-align: right;
+        color: #4F7194;
+
+        h5 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+            color: #193566;
+        }
+        
+    }
+
+    .blockContent {
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+        border-top: 1px solid #D1D9E6;
+        border-bottom: 1px solid #D1D9E6;
+
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #193566;
+        }
+    }
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: end;
+        column-gap: 20px;
+        padding: 0 25px 25px;
+    }
+
+    
+    .buttonMarkWrapper {
+        display: flex;
+        justify-content: center;
+        padding: 0 25px 25px;
+    }
+
+    .denyBtn {
+        height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #E66666;
+    }
+
+    .approveBtn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        width: 139px;
+        height: 41px;
+        background: #1479FF;
+        border-radius: 5px;
+    }
+    .approveMarkBtn {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        color: #FFFFFF;
+        width: 230px;
+        height: 41px;
+        background: #1479FF;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 767px){
+    .modal-box {
+        height: 60vh;
+        width: 50vw;
+    }
+}

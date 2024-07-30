@@ -1,0 +1,348 @@
+@import "./Variable.scss";
+@import "./button.scss";
+@import "./common.scss";
+@import "./sidebar.scss";
+@import "./home.scss";
+@import "./media.scss";
+@import "./font.scss";
+@import "../style/setting.scss";
+@import "../style/service.scss";
+@import "../style/staff.scss";
+@import "../style/customer.scss";
+@import '../../Styles/mixins/color.scss';
+
+$outline-btn-background: $body-banner-color;
+$cus-medium-btn-background: $primary;
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  background-color: $full-page-banner;
+  min-height: 100vh;
+}
+
+.cus-add-font {
+  font-family: "Poppins", sans-serif !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p:last-child {
+  margin-top: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+.react-multiple-carousel__arrow::before {
+  color: $primary  !important;
+  font-family: poppins-extrabold;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  content: "\e825";
+  font-weight: bolder !important;
+}
+
+.react-multiple-carousel__arrow--left::before {
+  content: "\e824";
+  font-weight: bolder !important;
+}
+
+.react-multiple-carousel__arrow {
+  background-color: transparent !important;
+}
+
+button {
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+
+  width: 4px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #D3E4F3;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+
+
+  border-radius: 48px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D3E4F3;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #fff;
+
+}
+
+
+.content-blur {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.font-size-17 {
+  font-size: 17px;
+}
+
+// .content {
+//   //   transition: 0.5s;
+//   //   opacity: 1;
+// }
+
+.sidebar-display {
+  display: block !important;
+}
+
+.list-box1 {
+  height: calc(100vh - 134px) !important;
+  min-height: 100%;
+}
+
+.cus-font-bold {
+  font-family: poppins-bold;
+}
+
+.cus-font-medium {
+  font-family: poppins-medium;
+}
+
+.btn-box-shadow {
+  box-shadow: -5px -5px 10px #ffffff, 5px 5px 10px rgba(151, 167, 195, 0.4);
+}
+
+.outline-btn-style {
+  background-color: $outline-btn-background;
+  border-radius: 10px;
+  padding: 8px 15px;
+  min-width: 175px;
+  height: 45px;
+  font-size: 16px !important;
+  @extend .btn-box-shadow;
+}
+
+.cus-medium-btn {
+  background: $cus-medium-btn-background;
+  padding: 8px 20px;
+  @extend .btn-box-shadow;
+  border-radius: 6px !important;
+  min-width: 175px;
+  height: 45px;
+  font-size: 16px !important;
+}
+
+.drop-down-background {
+  background: #ecf0f3;
+  box-shadow: -3px -3px 6px #ffffff, 3px 3px 6px rgba(25, 53, 102, 0.1);
+  border-radius: 10px;
+}
+
+.modal-banner {
+  background: #ecf0f3;
+}
+
+.right-border {
+  border-radius: 0 !important;
+  border-right: 2px solid rgba(25, 53, 102, 0.3);
+}
+
+.font-size-30 {
+  font-size: 30px;
+}
+
+.no-data-height {
+  height: calc(100vh - 480px);
+}
+
+.add-btn-dropdown-shadow {
+  box-shadow: 5px 5px 10px rgba(25, 53, 102, 0.1), -5px -5px 10px #ffffff;
+}
+
+.plus-number {
+  background: #ecf0f3;
+  box-shadow: 3px 3px 6px rgba(151, 167, 195, 0.4), -3px -3px 6px #ffffff;
+  border-radius: 10px;
+  width: 45px;
+  cursor: pointer;
+  height: 45px;
+
+  i {
+    color: #97a7c3;
+    font-size: 20px;
+  }
+}
+
+.menu-item-wrapper:focus {
+  outline: none !important;
+}
+
+// ::-moz-selection {
+//   /* Code for Firefox */
+//   color: var(--primary) !important;
+//   background-color: #193566 !important;
+// }
+// ::selection {
+//   color: var(--primary) !important;
+//   background-color: #193566 !important;
+// }
+.rs-font {
+  // font-family: verdana !important;
+  // font-weight: 600 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.modalHeight {
+  max-height: calc(100vh - 10px);
+  overflow: hidden;
+  overflow-x: hidden !important;
+}
+
+.h-cus {
+  height: 100%;
+}
+
+.total-sales-font {
+  font-size: 40px;
+}
+
+.total-heding-font {
+  font-size: 30px;
+}
+
+.custome-font {
+  font-size: 18px;
+}
+
+.book-btn {
+  position: absolute;
+  width: calc(100% - 1rem);
+  bottom: 20px;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.react-autosuggest__input {
+  width: 240px;
+  height: 30px;
+  padding: 10px 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 280px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: #ddd;
+}
+
+.e-calendar .e-content td.e-today.e-selected span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-today.e-selected span.e-day {
+  background-color: #193566 !important;
+  border: none;
+  box-shadow: none;
+}
+
+.e-calendar .e-content td.e-selected span.e-day,
+.e-bigger.e-small .e-calendar .e-content td.e-selected span.e-day {
+  background-color: $blue-light  !important;
+}
+
+.modal-search-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 45px;
+  justify-content: space-between;
+  gap: 0 20px;
+}
+
+.e-btn.e-flat.e-primary:hover,
+.e-css.e-btn.e-flat.e-primary:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+
+.roboto-font {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}

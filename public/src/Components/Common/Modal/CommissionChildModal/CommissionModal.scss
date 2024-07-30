@@ -1,0 +1,522 @@
+// @import '../../../../Styles/mixins/global.scss';
+@import '../../../../Styles/mixins/breakpoint.scss';
+@import '../../../../Styles/mixins/color.scss';
+@import '../../../../Styles/mixins/typography.scss';
+
+.comission-modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f6fbff91;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999999;
+    animation-name: round;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+
+    .comission-modal-md {
+        width: 640px;
+        height: calc(100vh - 60px);
+        background-color: #fff;
+        box-shadow: 0px 4px 10px #d1d9e680;
+
+
+
+        .add-range {
+            padding: 15px 0 0 0;
+
+            p {
+                @include text-sm-bold;
+                font-weight: 500;
+                color: #1479FF;
+                cursor: pointer;
+                margin: 0;
+            }
+        }
+
+        .dropdown-hidden {
+            max-height: 0px;
+            overflow: hidden;
+            transition: .3s ease-in-out;
+        }
+
+        .dropdown-show {
+            max-height: calc(100vh - 0px);
+            overflow: hidden;
+            transition: .3s ease-in-out;
+        }
+
+        .first-section-input-grid {
+            display: grid;
+            padding: 22px 0 0 0;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 22px;
+
+            .first-section-input-grid-items {
+                grid-column: span 6;
+
+            }
+        }
+
+        .cus-dropdown {
+            position: absolute;
+            width: 100%;
+            z-index: 99999;
+
+            .cus-dropdown-design {
+                background-color: #fff;
+                box-shadow: 0px 0px 10px #D1D9E6;
+                border-radius: calc($normal-pixel - 2px);
+                border: 1px solid $table-border;
+
+                ul {
+                    li {
+                        padding: calc($normal-pixel * 3 - 0px);
+                        border-bottom: 1px solid $table-border;
+                        @include text-sm-bold;
+                        cursor: pointer;
+                        font-weight: 500;
+                        transition: .2s ease-in-out;
+                        color: $blue-light;
+
+                        &:hover {
+                            color: $blue-2;
+                        }
+
+                        span {
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 18px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+
+            .month-scroll {
+                height: 260px;
+                overflow: scroll;
+            }
+        }
+
+        .comission-body {
+            height: calc(100vh - 170px);
+            overflow: auto;
+
+            .input-bottom-alignment {
+                margin: 0 0 22px 0;
+            }
+
+            .reltive-div {
+                position: relative;
+
+                .icon-inputr-relative {
+                    position: relative;
+                    display: flex;
+
+                    .input-width-big {
+                        width: 85%;
+                    }
+
+                    .input-width-small {
+                        width: 15%;
+                    }
+
+                    .down-icon-alignment {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 15px;
+                        cursor: pointer;
+
+                    }
+
+                    .opacity-class {
+                        opacity: 0.6;
+                    }
+
+
+                    .commission-input-field-big-width {
+                        width: 75%;
+                    }
+
+                    .commission-input-field-small-width {
+                        width: 25%;
+                    }
+
+                }
+
+                input {
+                    width: 100%;
+                    border: 1px solid #D1D9E6;
+                    padding: 0 15px;
+                    color: #193566;
+                    cursor: pointer;
+                    height: 51px;
+                    border-radius: 3px;
+                    @include text-sm-bold;
+                    font-weight: 500;
+
+                    &.width-small {
+                        width: 85%;
+                    }
+
+                    &.selected-input {
+                        background: #F6FBFF;
+                        border: 1px solid #C4DEFF;
+                        border-radius: 3px;
+                    }
+                }
+
+                ::placeholder {
+                    color: #97A7C3;
+                    @include text-sm-bold;
+                    font-weight: 500;
+                }
+            }
+
+            .relative-input-cus {
+                position: relative;
+
+                .lable-alignment {
+                    display: flex;
+                    align-items: center;
+
+                    div:first-child {
+                        padding-right: 5px;
+                    }
+
+                    label {
+                        @include text-sm-bold;
+                        color: #193566;
+                        font-weight: 500;
+                        display: block;
+                        padding: 0 0 2px 0;
+                    }
+                }
+
+                .commision-add-range-box-size {
+                    background: #F6FBFF;
+                    border: 1px solid #D1D9E6;
+                    border-radius: 3px 3px 0px 0px;
+
+                    .commissiom-add-range-box-padding-size {
+                        padding: 10px 15px 22px 15px;
+
+                        .close-btn-create {
+                            display: flex;
+                            justify-content: end;
+                            cursor: pointer;
+
+                            img {
+                                width: 14px;
+                            }
+                        }
+
+
+
+                        .from-to-commission-row-input {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 1rem;
+
+                            .commission-width-display {
+                                width: 50%;
+                            }
+
+                            .from-to-label-design {
+                                display: flex;
+                            }
+
+                            .commission-input-field-big-width {
+                                width: 75%;
+                            }
+
+                            .commission-input-field-small-width {
+                                width: 25%;
+                            }
+                        }
+
+                        .checkbox-tiered-commission-text {
+                            display: flex;
+                            gap: 5px;
+                            margin-top: 5px;
+
+                            .checkbox-tiered-commission-text-size-design {
+                                font-family: 'Poppins';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 21px;
+                                color: #193566;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .service-commission-section-alignment {
+                padding: 22px 22px 0 22px;
+                border-bottom: 1px solid #D1D9E6;
+
+                .section-title-alignment {
+                    display: flex;
+                    padding: 0 0 22px 0;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        p {
+                            @include heading-4;
+                            font-weight: 500;
+                            color: #193566;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .first-section-input {
+                padding: 22px;
+                border-bottom: 1px solid #D1D9E6;
+
+
+            }
+        }
+
+
+
+        .comission-header {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(209, 217, 230, 0.5);
+            padding: 25px;
+
+            .comission-header-alignment {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                div:last-child {
+                    button {
+                        padding: 5px 12px;
+                        background: #1479FF;
+                        border-radius: 3px;
+                        min-width: 86px;
+                        border: none;
+                        @include text-sm-bold;
+                        height: 33px;
+                        color: #fff;
+                    }
+                }
+
+                div:first-child {
+                    display: flex;
+                    align-items: center;
+
+                    div:nth-child(1) {
+                        width: 33px;
+                        border-radius: 3px;
+                        background-color: #edf5ff;
+                        cursor: pointer;
+                        height: 33px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    div+div {
+                        padding-left: 25px;
+
+                        h1 {
+                            @include heading-8;
+                            color: #193566;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .add-comission-modal-sm {
+        width: 500px;
+        height: calc(100vh - 60px);
+        background-color: #fff;
+        box-shadow: 0px 4px 10px #d1d9e680;
+
+        .comission-header {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(209, 217, 230, 0.5);
+            padding: 25px;
+
+            .comission-header-alignment {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                div:last-child {
+                    button {
+                        padding: 5px 12px;
+                        background: #1479FF;
+                        border-radius: 3px;
+                        min-width: 86px;
+                        border: none;
+                        @include text-sm-bold;
+                        height: 33px;
+                        color: #fff;
+                    }
+                }
+
+                div:first-child {
+                    display: flex;
+                    align-items: center;
+
+                    div:nth-child(1) {
+                        width: 33px;
+                        border-radius: 3px;
+                        background-color: #edf5ff;
+                        cursor: pointer;
+                        height: 33px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    div+div {
+                        padding-left: 25px;
+
+                        h1 {
+                            @include heading-8;
+                            color: #193566;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .CommissionTransaction-modal-md {
+        width: 500px;
+        // height: calc(100vh - 60px);
+        background-color: #fff;
+        box-shadow: 0px 4px 10px #d1d9e680;
+
+        .comission-header {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(209, 217, 230, 0.5);
+            padding: 25px;
+
+            .comission-header-alignment {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                div:last-child {
+                    button {
+                        padding: 5px 12px;
+                        background: #1479FF;
+                        border-radius: 3px;
+                        min-width: 86px;
+                        border: none;
+                        @include text-sm-bold;
+                        height: 33px;
+                        color: #fff;
+                    }
+                }
+
+                div:first-child {
+                    display: flex;
+                    align-items: center;
+
+                    div:nth-child(1) {
+                        width: 33px;
+                        border-radius: 3px;
+                        background-color: #edf5ff;
+                        cursor: pointer;
+                        height: 33px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: 13px;
+                        }
+                    }
+
+                    div+div {
+                        padding-left: 25px;
+
+                        h1 {
+                            @include heading-8;
+                            color: #193566;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .comission-body {
+            // .border-bottom-display{
+
+
+            .CycleEverydisplay {
+                padding: 25px;
+                border-bottom: 1px solid #D1D9E6;
+
+                p {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    color: #193566;
+                }
+            }
+
+            .Servicecommissiondisplay {
+                padding: 25px;
+                border-bottom: 1px solid #D1D9E6;
+
+
+                h3 {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    color: #193566;
+
+                }
+
+                .service-commission-width {
+                    width: 248px;
+
+                    p {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #193566;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}
+
+.target-range-top-alignment {
+    padding: 22px 0 0 0;
+}

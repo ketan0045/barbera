@@ -1,0 +1,112 @@
+@import '../../Styles/mixins/global.scss';
+
+
+.tasklist-profile-setup {
+    .tasklist-profile-box {
+        width: 435px;
+        box-sizing: border-box;
+        box-shadow: 10px 0px 30px rgba(151, 167, 195, 0.1);
+        border-radius: 0px 10px 0px 0px;
+        background-color: #FFF;
+        border: 1px solid #D1D9E6;
+        padding: 30px 18px;
+        position: fixed;
+        color: #97A7C3;
+        bottom: 0;
+        animation: boom-boom 1s linear infinite;
+        left: 0;
+        .tasklist-profile-grid {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 54px minmax(0 , 1fr) 60px;
+            gap: 0 15px;
+            .tasklist-profile-grid-items {
+                h1 {
+                    @include text-small-bold;
+                    font-weight: 600;
+                   
+                    margin: 0 0 5px 0;
+                }
+                p {
+                    font-size: 10px;
+                    line-height: 15px;
+                    font-weight: 500;
+                    font-family: "Poppins", sans-serif ;
+                }
+                span {
+                    @include text-small-bold;
+                    color: #27AE60;
+                    display: block;
+                }
+                .logo-text {
+                    p {
+                        font-size: 10px;
+                        line-height: 15px;
+                        text-align: center;
+                        font-weight: 600;
+                        font-family: "Poppins", sans-serif ;
+                        color:#1479FF ;
+                    }
+                }
+                .light-logo-center {
+                    display: flex;
+                    padding: 0 0 5px 0;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@keyframes boom-boom {
+    0% {
+        border: 1px solid #D1D9E6;
+        transition: .3s ease-in-out;
+    }
+
+    50% {
+        border: 1px solid #1479FF;
+        transition: .3s ;
+        color: #1479FF;
+    }
+    100% {
+        border: 1px solid #D1D9E6;
+        transition: .3s ease-in-out;
+    }
+}
+
+
+@keyframes boom-boom-text {
+    0% {
+        transition: .3s ease-in-out;
+    }
+
+    50% {
+        transition: .3s ;
+        color: #1479FF;
+    }
+    100% {
+        transition: .3s ease-in-out;
+    }
+}
+
+
+@keyframes text-fade {
+    0% {
+        transition: .3s ease-in-out;
+    }
+
+    50% {
+        transition: .3s ;
+        color: #97a7c3;
+    }
+    100% {
+        transition: .3s ease-in-out;
+    }
+}
+
+
+// animation: text-fade 1s linear infinite;

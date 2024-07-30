@@ -1,0 +1,310 @@
+@import "../../Styles/mixins/breakpoint.scss";
+@import "../../Styles/mixins/color.scss";
+@import "../../Styles/mixins/typography.scss";
+
+.service-sub-header {
+    background-color: $white;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 15px;
+
+    @include breakpoint("max-md") {
+        margin-bottom: 20px;
+    }
+
+    .input-relative {
+        position: relative;
+        max-width: 500px;
+        width: 500px;
+
+        @include breakpoint("max-md") {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        input {
+            width: 100%;
+            height: 38px;
+            background-color: $blue-opacity;
+            @include text-sm-bold;
+            color: $gray;
+            padding-right: 10px;
+            padding-left: 35px;
+            font-weight: 500;
+            cursor: text;
+        }
+
+        ::placeholder {
+            @include text-sm-bold;
+            color: $gray;
+            font-weight: 500;
+        }
+
+        .search-icon-alignment-customer {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+        }
+    }
+
+    .service-button-alignment {
+        display: flex;
+        align-items: center;
+
+        button {
+            width: 143px;
+            height: 38px;
+            @include medium-border-radius;
+            padding: 3px 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include text-sm-bold;
+            font-size: 16px;
+        }
+
+        .import-button-style {
+            background-color: $white;
+            box-shadow: 0px 0px 10px rgba(209, 217, 230, 0.75);
+            color: $blue-2;
+            margin-right: 22px;
+
+            img {
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .add-new-button-style {
+        background-color: $blue-2;
+        color: $white;
+        transition: 0.2s;
+    }
+
+    .service-button-search-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint("max-md") {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 143px;
+            gap: 0 20px;
+        }
+    }
+
+    .add-new-option {
+        position: absolute;
+        width: 100%;
+        z-index: 99999;
+    }
+
+    .add-new-option-hidden {
+        max-height: 0px;
+        overflow: hidden;
+        transition: 1s ease-in-out;
+    }
+
+    .add-new-option-show {
+        max-height: calc(100vh - 250px);
+        box-shadow: 0px 0px 10px #d1d9e6;
+
+        overflow: hidden;
+        transition: 2s ease-in-out;
+    }
+
+    .add-new-sub-menu-design {
+        background-color: $white;
+        border-radius: 3px;
+        box-shadow: 0px 0px 4px #d1d9e6;
+
+        ul {
+            li {
+                padding: 10px 0;
+                text-align: center;
+                @include text-sm-bold;
+                color: $blue-2;
+                border-bottom: 1px solid $table-border;
+                cursor: pointer;
+            }
+
+            li:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.all-service-box-screen-height {
+    height: calc(100vh - 233px);
+    overflow-x: hidden;
+    overflow: auto;
+
+    .center-box-align {
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint("max-md") {
+            display: initial;
+            padding: 0 20px;
+        }
+    }
+
+    .service-box-design {
+        background-color: $white;
+        width: 580px;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 5px;
+        padding: 15px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+
+        @include breakpoint("max-md") {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .service-sub-table th:nth-child(1) {
+            width: 50%;
+        }
+
+        .service-sub-table th:nth-child(2) {
+            width: 25%;
+        }
+
+        .service-sub-table th:nth-child(3) {
+            width: 25%;
+        }
+
+        .service-table-design {
+            max-width: 100%;
+
+            table {
+                width: 100%;
+            }
+        }
+
+        .service-heading-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 30px;
+            justify-content: space-between;
+            gap: 0 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+
+            // border-bottom: 1px solid $table-border;
+            .service-heading-grid-items {
+                .more-option-cus-menu {
+                    width: 30px;
+                    height: 28px;
+                    display: flex;
+                    padding: 0 5px;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid $table-border;
+                    @include medium-border-radius;
+                    cursor: pointer;
+                }
+
+                .sub-grid {
+                    display: grid;
+                    grid-template-columns: 6px minmax(0, 1fr);
+                    gap: 0 7px;
+
+                    .sub-grid-items {
+                        .divider-dynamic {
+                            background: #ffd3aa;
+                            width: 6px;
+                            height: 100%;
+                            border-radius: 2px;
+                        }
+
+                        p {
+                            @include text-md-bold;
+                            color: $blue-light;
+                            margin: 0;
+                            line-height: 27px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.service-table-design tr th {
+    padding: 15px 0;
+    border-bottom: 1px solid $table-border;
+}
+
+.service-table-design tr th {
+    @include text-sm-bold;
+    font-size: 15px;
+    font-weight: 500;
+    color: $blue-light;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.service-table-design {
+    overflow: scroll;
+    padding-right: 15px;
+}
+
+.customer-form-group-align {
+    input {
+        font-weight: 500 !important;
+    }
+}
+
+.service-table-submenu {
+    position: absolute;
+    width: 170px;
+    background-color: $white;
+    @include medium-border-radius;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0px 0px 10px rgba(209, 217, 230, 0.75);
+    opacity: 0;
+
+    &:hover {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.service-heading-grid-items:hover .service-table-submenu {
+    opacity: 1;
+}
+
+.service-table-sub-menu-hidden {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 2s ease-in-out;
+}
+
+.service-table-sub-menu-show {
+    max-height: calc(100vh - 200px);
+    transition: 2s ease-in-out;
+    overflow: hidden;
+}
+
+.service-table-submenu {
+    ul {
+        li {
+            padding: 9px 0;
+            cursor: pointer;
+            @include text-sm-bold;
+            color: $blue-2;
+            text-align: center;
+            font-weight: 500;
+            border-bottom: 1px solid $table-border;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.book-appoint-btn {
+    background: #97A7C3;
+    box-shadow: -5px -5px 10px #FFFFFF, 5px 5px 10px rgba(25, 53, 102, 0.3);
+    border-radius: 8px;
+    min-height:50px;
+    padding: 10px 25px;
+}
+.list-price {
+    overflow-x: hidden !important;
+    overflow: scroll;
+    padding-right: 10px;
+    height: calc(100vh - 472px);
+}
+.price-data tr {
+   height: 60px !important;
+   border-top: none !important;
+}
+.price-data td {
+    padding-top: 10px;
+   padding-bottom: 10px;
+}
+.danger-opacity-color {
+    color: #d6000069;
+}
+.customer-child {
+    height: 100%;
+}

@@ -1,0 +1,48 @@
+@import '../../../../Styles/mixins/breakpoint.scss';
+@import '../../../../Styles/mixins/color.scss';
+@import '../../../../Styles/mixins/typography.scss';
+
+.toaster-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 99999999999999999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    animation-name: tostermodal;
+	animation-duration: 1s ;
+	animation-timing-function:linear;
+}
+
+.success-message-toster {
+    background: #40FAB2;
+}
+
+.error-message-toster {
+    background-color: #E66666;
+}
+
+.modal-success-toster {
+    width: 350px;
+    margin-top: $normal-pixel * 8;
+    box-shadow: 0px 0px 30px #D1D9E6;
+    border-radius: $normal-pixel * 2;
+    height: 90px;
+    padding: calc($normal-pixel * 6 - 0px);
+    .grid {
+        display: grid;
+        grid-template-columns: 35px minmax(0 , 1fr);
+        gap: 0 30px;
+        align-items: center;
+        .grid-items {
+            p {
+                @include text-md-bold;
+                margin: 0;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+@import '../../../Styles/mixins/breakpoint.scss';
+@import '../../../Styles/mixins/color.scss';
+@import '../../../Styles/mixins/typography.scss';
+
+.option-select-group .input-relative input {
+    font-weight: 500 !important;
+}
+
+.option-select-group {
+    label {
+        @include text-sm-bold;
+        color: $blue-light;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+
+    .input-relative {
+        position: relative;
+
+        input {
+            height: 51px;
+            width: 100%;
+            @include text-sm-bold;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            color: $blue-light  !important;
+            padding: 0 calc($normal-pixel * 3 - 0px);
+            border: 1px solid $table-border;
+            border-radius: calc($normal-pixel - 2px);
+        }
+
+        ::placeholder {
+            @include text-sm-bold;
+            font-weight: 500 !important;
+            font-size: 14px !important;
+            color: $dark-gray;
+        }
+
+        .drop-down-icon-center {
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            transform: translateY(-50%);
+            right: 15px;
+
+            img {
+                width: 12px;
+                height: 6px;
+            }
+        }
+    }
+
+    .sub-menu {
+        width: 100%;
+        position: absolute;
+        z-index: 9999;
+
+        .sub-menu-design {
+            background-color: $white;
+            box-shadow: 0px 0px 10px #D1D9E6;
+            border-radius: calc($normal-pixel - 2px);
+            border: 1px solid $table-border;
+
+            ul {
+                li {
+                    padding: calc($normal-pixel * 3 - 0px);
+                    border-bottom: 1px solid $table-border;
+                    @include text-sm-bold;
+                    cursor: pointer;
+                    font-weight: 500;
+                    transition: .2s ease-in-out;
+                    color: $blue-light;
+
+                    &:hover {
+                        color: $blue-2;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .sub-menu-close {
+        max-height: 0px;
+        overflow: hidden;
+        transition: .3s ease-in-out;
+    }
+
+    .sub-menu-open {
+        max-height: 200px;
+        overflow: auto;
+        transition: .3s ease-in-out;
+        overflow-x: hidden;
+    }
+}
+
+
+
+.input-relative {
+    input {
+        font-weight: 500 !important;
+    }
+
+    ::placeholder {
+        font-weight: 500 !important;
+    }
+}

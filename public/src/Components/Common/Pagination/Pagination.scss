@@ -1,0 +1,132 @@
+@import '../../../Styles/mixins/breakpoint.scss';
+@import '../../../Styles/mixins/color.scss';
+@import '../../../Styles/mixins/typography.scss';
+
+// transform: rotate(181deg);
+
+.pagination-alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .number {
+        display: flex;
+        align-items: center;
+        // margin-right: calc($normal-pixel * 3 - 0px);
+        .page-box {
+            width: 21px;
+            height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            margin-right: calc($normal-pixel * 3 - 0px);
+            @include text-sm-bold;
+            color: #5e7294;
+            font-weight: 500;
+        }
+        .active-page {
+            background-color: #eaf1fa;
+            color: $blue-2 !important;
+        }
+    }
+
+
+}
+.next-button button {
+  display: flex;
+  align-items: center;
+}
+.next-button {
+  display: flex;
+  align-items: center;
+  span {
+    @include text-sm-bold;
+      padding-right: calc($normal-pixel * 2 - 0px);
+      color: $blue-2;
+      display: block;
+      font-weight: 500;
+      // padding-top: 3px;
+  }
+}
+
+.prev-button button {
+  display: flex;
+  align-items: center;
+}
+.roatate-arrow button img {
+  transform: rotate(
+360deg);
+}
+.prev-button {
+  margin-right: calc($normal-pixel * 3 - 0px);
+  // opacity: .5;
+  display: flex;
+  align-items: center;
+  img {
+      transform: rotate(181deg);
+  }
+  span {
+      @include text-bold;
+      padding-left: calc($normal-pixel * 2 - 0px);
+      color: $blue-2;
+      display: block;
+      // padding-top: 3px;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -10px;
+  margin-right: -10px;
+justify-content:flex-start;
+
+  button {
+    border-radius: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #666;
+  }
+
+  .current {
+    font-weight: 600;
+    color: black;
+    border-bottom: 2px solid black;
+  }
+}
+
+.prev,
+.prev1,
+.next1,
+.next {
+  font-size: 0;
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+.prev {
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.next {
+  svg {
+    transform: rotate(-90deg);
+  }
+}
+.next1{
+  svg {
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,145 @@
+
+.history-modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .history-modal {
+        height: 90vh;
+        width: 40vw;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+        border-radius: 5px;
+        .history-modal-header {
+            height: 71px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            padding: 22px;
+            .history-modal-title {
+                margin-left: 25px;
+                font-family: 'Poppins';
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 33px;
+                color: #193566;
+            }
+            .modal-close {
+                height: 27px;
+                width: 27px;
+                font-size: 12px;
+                background: #1479ff12;
+                border-radius: 3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .close {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+        .history-modal-body {
+            margin: 30px 22px;
+            max-height: calc(90vh - 120px);
+            overflow-y: scroll;
+            table { 
+                width: 100%; 
+                border-collapse: collapse;
+                position: relative;
+                .breaker {
+                    height: 20px !important;
+                    border: none;
+                }
+                tr {
+                    border-top: 0;
+                    border-bottom: 1px solid #D1D7E0;
+                    height: 54px !important;
+                }
+                thead {
+                    top: 0;
+                    position: sticky;
+                    background: #FFFFFF;
+                    z-index: 1;
+                    &::after {
+                        content: "";
+                        height: 1px;
+                        width: 100%;
+                        background: #D1D7E0;
+                        bottom: 19px;
+                        left: 0;
+                        position: absolute;
+                    }
+                    tr {
+                        th {
+                            font-family: 'Poppins';
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 22px;
+                            color: #97A7C3;
+                            text-align: left;
+                        }
+                        th:nth-of-type(3) {
+                            text-align: center;
+                        }
+                        th:nth-of-type(4) {
+                            text-align: center;
+                        }
+                    } 
+                }
+                tbody {
+                    margin-top: 15px;
+                    tr {
+                        border: none;
+                        height: 64px !important;
+                        td {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 22px;
+                            color: #193566;
+                        }
+                        td:nth-of-type(1) {
+                            width: 20%;
+                        }
+                        td:nth-of-type(2) {
+                            width: 40%;
+                            white-space: normal;
+                            word-break: break-word;
+                        }
+                        td:nth-of-type(3) {
+                            width: 25%;
+                            text-align: center;
+                        }
+                        td:nth-of-type(4) {
+                            width: 15%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            width: 60vw;
+        }
+    }
+}
+.qualityWrapper {
+    position: relative;
+    svg {
+        left: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        z-index: 0;
+    }
+}

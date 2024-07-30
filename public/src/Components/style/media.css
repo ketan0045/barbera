@@ -1,0 +1,302 @@
+@media (min-width: 200px) and (max-width: 1500px) {
+  .container-left-right-space {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1440px) {
+  .font-size-40 {
+    font-size: 31px;
+  }
+  .dashboard-box-height {
+    height: calc(100% - -5%) !important;
+  }
+  .font-size-18 {
+    font-size: 15px !important;
+  }
+  .list-box1 {
+    height: calc(100vh - 120px) !important;
+  }
+  .popular-box-height {
+    min-height: 185px;
+  }
+  .map-height {
+    height: 227px !important;
+  }
+  .staff-box-height {
+    height: calc(100vh - 118px) !important;
+  }
+  .staff-profile-card {
+    height: calc(100vh - 210px) !important;
+  }
+  .list-box-child-height {
+    max-height: 290px !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .service-box-height {
+    height: calc(100vh - 227px) !important;
+  }
+  .top-mc-pt-1 {
+    padding-top: 1rem !important;
+  }
+  .list-price {
+    height: calc(100vh - 435px) !important;
+  }
+  .staff-profile-data {
+    height: calc(100vh - 210px) !important;
+  }
+  .cus-padding-map {
+    padding-bottom: 15px !important;
+  }
+  .mini-view-heading-style {
+    font-size: 25px !important;
+  }
+  .mt-remove-mini {
+    margin-top: .5rem !important;
+  }
+  .pt-mini-view {
+    padding-top: 0.75rem !important;
+  }
+  .mini-view-font-size-19 {
+    font-size: 19px;
+  }
+  .mini-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mini-flex p {
+    padding-left: 10px;
+  }
+  .mini-view-space {
+    padding-top: 0.75rem;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: calc(-4% + 1px) !important;
+  }
+  .react-multiple-carousel__arrow--left {
+    left: calc(-4% + 1px) !important;
+  }
+  .cus-padding-map {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .font-size-25 {
+    font-size: 18px;
+  }
+  .leptop-mb-nth {
+    margin-top: 1rem;
+  }
+  .font-size-20 {
+    font-size: 16px;
+  }
+  .font-size-16 {
+    font-size: 13px;
+  }
+  .font-size-17 {
+    font-size: 14px !important;
+  }
+  .font-size-32 {
+    font-size: 28px;
+  }
+  .min-height-box {
+    min-height: auto;
+  }
+}
+
+.toogle {
+  display: none;
+}
+
+@media (min-width: 120px) and (max-width: 767px) {
+  .mobile-view-block {
+    display: block !important;
+  }
+  .m-w-full {
+    width: 100%;
+  }
+  .working-hour-btn {
+    width: 100%;
+  }
+  .m-start {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .setting-box-scroll, .company-card {
+    height: auto !important;
+  }
+  .m-mb-1 {
+    margin-bottom: 1rem !important;
+  }
+  .card-footer-bottom {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
+  }
+  .outline-btn-style, .cus-medium-btn {
+    min-width: auto !important;
+    padding: 8px 30px !important;
+  }
+  .m-p-1 {
+    padding: 1rem !important;
+  }
+  .cus-medium-btn {
+    width: 100%;
+  }
+  .outline-btn-style {
+    width: 100%;
+  }
+  .dropdown-style {
+    min-width: 100%;
+    width: 100%;
+  }
+  .font-size-35 {
+    font-size: 28px;
+    padding-left: 5px;
+  }
+  .mobile-view-header {
+    margin-top: .5rem;
+  }
+  header {
+    padding-top: 15px;
+  }
+  .mobile-view-mt-1 {
+    margin-top: 1rem !important;
+  }
+  .list-price {
+    height: calc(100vh - 330px);
+    margin-bottom: 1rem;
+  }
+  .staff-profile-card {
+    height: auto !important;
+  }
+  .mobile-view-font-size-14 {
+    font-size: 14px !important;
+  }
+  .dashboard-box-height {
+    height: auto;
+    min-height: auto;
+  }
+  .font-size-25 {
+    font-size: 20px;
+  }
+  .padding-top-remove {
+    padding-top: 0rem !important;
+  }
+  .m-mr-0 {
+    margin-right: 0 !important;
+  }
+  .mobile-view-between {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .appointment-btn {
+    min-width: 169px;
+    min-height: 45px;
+    padding: 2px 15px;
+  }
+  .m-pl-1 {
+    padding-left: 1rem !important;
+  }
+  .padding-right-remove {
+    padding-right: 0rem !important;
+  }
+  .padding-left-remove {
+    padding-left: 0rem !important;
+  }
+  .ml-remove {
+    margin-left: 0rem !important;
+  }
+  .mr-remove {
+    margin-right: 0rem !important;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 1250px) {
+  .toogle {
+    display: block;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .sidebar-banner {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .tablet-view-mt-4 {
+    margin-top: 1.5rem;
+  }
+  .t-pl-0 {
+    padding-left: 0rem !important;
+  }
+  .t-pr-0 {
+    padding-right: 0rem !important;
+  }
+  .t-mt-1 {
+    margin-top: 1rem !important;
+  }
+  .list-price {
+    margin-bottom: 1rem;
+  }
+  .t-mb-1 {
+    margin-bottom: 1rem !important;
+  }
+  .staff-profile-card, .staff-profile-data {
+    height: auto !important;
+  }
+}
+
+@media (min-width: 758px) and (max-width: 1536px) {
+  .dashboard-box-height {
+    height: 394px;
+  }
+  .auto-flex-device {
+    display: flex !important;
+    align-items: center !important.same-btn-style;
+  }
+  .list-box {
+    height: 383px;
+  }
+  .font-size-25 {
+    font-size: 19px;
+  }
+  .min-popular-height {
+    min-height: 235px;
+  }
+  .total-sales-box-height {
+    min-height: 196px;
+  }
+  .staff-box-height {
+    height: calc(100vh - 117px) !important;
+  }
+  .staff-profile-card {
+    height: calc(100vh - 209px) !important;
+  }
+  .staff-profile-data {
+    height: calc(100vh - 213px) !important;
+  }
+  .service-box-height {
+    height: calc(100vh - 226px) !important;
+  }
+  .card-footer-bottom {
+    position: inherit !important;
+    left: 0px !important;
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */

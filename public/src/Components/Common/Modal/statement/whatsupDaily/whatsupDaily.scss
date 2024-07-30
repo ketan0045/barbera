@@ -1,0 +1,476 @@
+.whatsapp-daily-statement-modal-body {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    height: calc(100vh - 94px);
+    overflow: auto;
+    overflow-x: hidden;
+
+    .all-box-width-fix {
+        width: 580px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 25px rgba(209, 217, 230, 0.4);
+        margin: 0 0 30px 0;
+        border-radius: 10px;
+
+        .select-data-section-alignment {
+            padding: 15px 22px;
+
+            .all-data-list-alignment {
+                .all-data-list-style:last-child {
+                    padding: 0;
+                }
+
+                .all-data-list-style {
+                    padding: 0 0 12px 0;
+
+                    h4 {
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-weight: 500;
+                        color: #193566;
+                        margin: 0 0 5px 0;
+                    }
+                }
+
+                .text-style {
+                    span {
+                        display: block;
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: #4F7194;
+                    }
+                }
+            }
+
+            .select-data-header-alignment {
+                padding: 0 0 15px 0;
+
+                p {
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #193566;
+                    font-weight: 500;
+
+                    span {
+                        color: #1479FF;
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .time-box-alignment {
+            padding: 17px 22px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+
+                button {
+                    width:85px;
+                    padding: 10px 12px;
+                    background: #FFFFFF;
+                    border: 1px solid #D1D9E6;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    cursor: pointer;
+                    color: #193566;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        padding-right: 15px;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #4F7194;
+                    font-weight: 500;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #193566;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .add-new-box-bottom-alignment {
+            padding: 0 0 22px 0;
+        }
+
+        .add-new-box-alignment {
+            height: 51px;
+            margin: 22px 0 0 0;
+            margin: 0 22px 0 22px;
+            background: #F4F9FF;
+            border: 1px solid #7DAFF2;
+            cursor: pointer;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
+
+            span {
+                font-size: 14px;
+                line-height: 21px;
+                color: #193566;
+                font-weight: 500;
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        .whatsapp-body-alignment {
+            padding: 22px;
+
+
+
+            .all-box-design:last-child {
+                margin: 0;
+            }
+
+            .all-box-design {
+                background: #FFFFFF;
+                border: 1px solid #D1D9E6;
+                border-radius: 3px;
+                height: 51px;
+                padding: 0 15px;
+                display: flex;
+                margin: 0 0 22px 0;
+                align-items: center;
+                justify-content: space-between;
+
+                div+div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .image-left-right-alignment {
+                    padding: 0 18px;
+                    height: 51px;
+                    display: flex;
+                    align-items: center;
+                    border-right: 1px solid #D1D9E6;
+                    border-left: 1px solid #D1D9E6;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                .image-left-alignment {
+                    padding-left: 18px;
+                }
+
+                div {
+                    span {
+                        font-size: 14px;
+                        line-height: 21px;
+                        color: #193566;
+                        cursor: pointer;
+                        font-weight: 500;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .whatsapp-header-alignment {
+            padding: 15px 22px;
+            border-bottom: 1px solid #D1D9E6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                h3 {
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #193566;
+                    font-weight: 600;
+                    margin: 0;
+                }
+
+                a {
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: 500;
+                    color: #1479FF;
+                    font-family: "Poppins", sans-serif;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #4F7194;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+.add-new-contact-desgin-box {
+    width: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 10px;
+
+    .add-new-contact-footer-alignment {
+        padding: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            padding: 9px 15px;
+            font-size: 14px;
+            line-height: 21px;
+            color: #fff;
+            font-weight: 600;
+            background: #1479FF;
+            border-radius: 3px;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:disabled,
+        button[disabled] {
+            opacity: 0.2;
+        }
+    }
+
+    .add-new-contact-modal-body {
+        padding: 30px 22px;
+        border-bottom: 1px solid #D1D9E6;
+
+        .new-input-style {
+            padding: 0 0 15px 0;
+
+            label {
+                font-size: 14px;
+                line-height: 21px;
+                color: #193566;
+                font-weight: 500;
+                display: block;
+                padding: 0 0 2px 0;
+            }
+
+            input {
+                width: 100%;
+                padding: 0 15px;
+                background: #FFFFFF;
+                border: 1px solid #D1D9E6;
+                border-radius: 3px;
+                font-size: 14px;
+                line-height: 21px;
+                color: #193566;
+                height: 51px;
+                font-weight: 500;
+            }
+
+            ::placeholder {
+                font-size: 14px;
+                color: #97A7C3;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .add-new-contact-header {
+        padding: 25px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(209, 217, 230, 0.5);
+        display: flex;
+        align-items: center;
+
+        div {
+            background-color: #edf5ff;
+            width: 33px;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        h5 {
+            font-size: 22px;
+            line-height: 33px;
+            color: #193566;
+            font-weight: 600;
+            padding-left: 25px;
+            margin: 0;
+        }
+    }
+}
+
+
+.daily-statement-modal-alignment-for-pages {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(209, 217, 230, 0.5);
+    border-radius: 10px;
+    width: 640px;
+
+    .more-list-hidden {
+        max-height: 0px;
+        overflow: hidden;
+        transition: .3s ease-in-out;
+    }
+
+    .more-list-show {
+        max-height: calc(100vh - 0px);
+        overflow: hidden;
+        transition: .3s ease-in-out;
+    }
+
+    .daily-statement-modal-body {
+        padding: 25px 22px;
+        max-height: calc(100vh - 94px - 30px);
+        overflow: auto;
+        overflow-x: hidden;
+
+        .boder-box-change {
+            border: 1px solid #7DAFF2 !important;
+
+            .first-header {
+                border-bottom: 1px solid #7DAFF2 !important;
+                background: #F3F8FF;
+            }
+        }
+
+        .boder-box {
+            margin: 0 0 22px 0;
+            background: #FFFFFF;
+            border: 1px solid #D1D9E6;
+            border-radius: 5px;
+
+            .more-list-align-for-all-content {
+                padding: 22px;
+
+                .more-list-box {
+                    padding: 15px;
+                    // background: #F3F8FF;
+                    border: 1px solid #D1D9E6;
+                    margin: 0 0 22px 0;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        span {
+                            font-size: 14px;
+                            line-height: 21px;
+                            font-weight: 500;
+                            color: #193566;
+                            display: block;
+                        }
+                    }
+                }
+                .more-list-box-active {
+                    padding: 15px;
+                    background: #F3F8FF;
+                    border: 1px solid #7DAFF2;
+                    margin: 0 0 22px 0;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    div {
+                        span {
+                            font-size: 14px;
+                            line-height: 21px;
+                            font-weight: 500;
+                            color: #193566;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .first-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 22px;
+                border-radius: 5px 5px 0px 0px;
+                cursor: pointer;
+                border-bottom: 1px solid transparent;
+
+                div {
+                    span {
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 600;
+                        color: #193566;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-header-alignment {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(209, 217, 230, 0.5);
+        justify-content: space-between;
+
+        div+div {
+            button {
+                padding: 9px 15px;
+                color: #fff;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 600;
+                background: #1479FF;
+                border-radius: 3px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .left-side-alignment {
+            display: flex;
+            align-items: center;
+
+            div:first-child {
+                background-color: #edf5ff;
+                width: 33px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+
+            div+div {
+                h3 {
+                    font-size: 22px;
+                    line-height: 33px;
+                    font-weight: 600;
+                    padding-left: 25px;
+                    color: #193566;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+[
+  { "name": "Sales analytics", "category": "Dashboard", "isChecked": true },
+  {
+    "name": "Appointments analytics",
+    "category": "Dashboard",
+    "isChecked": true
+  },
+  { "name": "Statement", "category": "Dashboard", "isChecked": true },
+  { "name": "Add new appointment", "category": "Dashboard", "isChecked": true },
+  {
+    "name": "Generate new invoice/Checkout",
+    "category": "Dashboard",
+    "isChecked": true
+  },
+  {
+    "name": "Appointment actions (Cancel, No-show, Edit)",
+    "category": "Dashboard",
+    "isChecked": true
+  },
+  {
+    "name": "Sales Data",
+    "category": "Dashboard",
+    "isChecked": true
+  },
+  {
+    "name": "Visit Data",
+    "category": "Dashboard",
+    "isChecked": true
+  },
+  {
+    "name": "General settings actions (Change working hours, edit profile, edit tax, edit currency)",
+    "category": "Settings",
+    "isChecked": true
+  },
+  {
+    "name": "Appointment tab page & actions",
+    "category": "Settings",
+    "isChecked": true
+  },
+  {
+    "name": "Invoices tab page & actions",
+    "category": "Settings",
+    "isChecked": true
+  },
+  {
+    "name": "Inventory tab page & actions",
+    "category": "Settings",
+    "isChecked": true
+  },
+  {
+    "name": "Membership tab page & actions",
+    "category": "Settings",
+    "isChecked": false
+  },
+  {
+    "name": "Roles permissions tab page & actions",
+    "category": "Settings",
+    "isChecked": true
+  },
+
+  { "name": "Customer page", "category": "Customer", "isChecked": true },
+  { "name": "Add new customer", "category": "Customer", "isChecked": true },
+  { "name": "Edit/delete customer", "category": "Customer", "isChecked": true },
+  {
+    "name": "Show customer transaction",
+    "category": "Customer",
+    "isChecked": true
+  },
+  {
+    "name": "Show customer analytics",
+    "category": "Customer",
+    "isChecked": true
+  },
+  {
+    "name": "Access other staff profiles",
+    "category": "Staff",
+    "isChecked": true
+  },
+  { "name": "Add new staff", "category": "Staff", "isChecked": true },
+  { "name": "Edit staff", "category": "Staff", "isChecked": true },
+  { "name": "Delete staff", "category": "Staff", "isChecked": true },
+  { "name": "Show staff transaction", "category": "Staff", "isChecked": true },
+  { "name": "Show staff analytics", "category": "Staff", "isChecked": true },
+  { "name": "Invoices page", "category": "Invoices", "isChecked": true },
+  { "name": "Edit/delete invoice", "category": "Invoices", "isChecked": true },
+  {
+    "name": "Allow send SMS to customer",
+    "category": "Invoices",
+    "isChecked": true
+  },
+  { "name": "Inventory page", "category": "Inventory", "isChecked": true },
+  { "name": "Add new product/Brand/Category", "category": "Inventory", "isChecked": true },
+  { "name": "Edit/delete products, brands, and categories", "category": "Inventory", "isChecked": true },
+  { "name": "Add stock", "category": "Inventory", "isChecked": true },
+  { "name": "Service page", "category": "Services", "isChecked": true },
+  {
+    "name": "Add new category/service",
+    "category": "Services",
+    "isChecked": true
+  },
+  {
+    "name": "Edit/delete category/service",
+    "category": "Services",
+    "isChecked": true
+  },
+  { "name": "Membership page", "category": "Membership", "isChecked": true },
+  { "name": "Add new membership", "category": "Membership", "isChecked": true },
+  {
+    "name": "Edit/delete membership",
+    "category": "Membership",
+    "isChecked": true
+  },
+  {
+    "name": "Membership information",
+    "category": "Membership",
+    "isChecked": true
+  },
+  {
+    "name": "Collection",
+    "category": "Dashboard",
+    "isChecked": false
+},
+{
+    "name": "Edit opening collection",
+    "category": "Collection",
+    "isChecked": false
+},
+{
+    "name": "Add new records",
+    "category": "Collection",
+    "isChecked": false
+},
+{
+    "name": "Cash register",
+    "category": "Collection",
+    "isChecked": false
+},
+{
+    "name": "Request clock in/out",
+    "category": "Attendance",
+    "isChecked": false
+},
+{
+    "name": "Accept/Mark attendance",
+    "category": "Attendance",
+    "isChecked": false
+},
+{
+    "name": "Staff tab page & actions",
+    "category": "Settings",
+    "isChecked": false
+},
+{
+    "name": "Customer transaction",
+    "category": "Customer",
+    "isChecked": false
+},
+{
+    "name": "Customer feedback & notes",
+    "category": "Customer",
+    "isChecked": false
+},
+{
+    "name": "Staff attendance",
+    "category": "Staff",
+    "isChecked": false
+},
+{
+    "name": "Staff commission",
+    "category": "Staff",
+    "isChecked": false
+},
+{
+    "name": "Create past invoices",
+    "category": "Invoices",
+    "isChecked": false
+},
+{
+    "name": "Stock history",
+    "category": "Inventory",
+    "isChecked": false
+}
+]
